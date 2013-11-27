@@ -1,0 +1,659 @@
+/*
+Theme Name: Matthew Pateman
+Theme URI: http://wordpress.org/extend/themes/twentytwelve
+Author: Matthew Pateman
+Author URI: http://matthewpateman.com
+Description: The 2013 theme for matthewpateman.com is a fully responsive theme based on the Less Framework.
+Version: 2.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: matthewpateman.com
+
+*/
+
+/* =Notes
+--------------------------------------------------------------
+This stylesheet uses rem values with a pixel fallback. The rem
+values (and line heights) are calculated using two variables:
+
+$rembase:     14;
+$line-height: 24;
+
+---------- Examples
+
+* Use a pixel value with a rem fallback for font-size, padding, margins, etc.
+	padding: 5px 0;
+	padding: 0.357142857rem 0; (5 / $rembase)
+
+* Set a font-size and then set a line-height based on the font-size
+	font-size: 16px
+	font-size: 1.142857143rem; (16 / $rembase)
+	line-height: 1.5; ($line-height / 16)
+
+---------- Vertical spacing
+
+Vertical spacing between most elements should use 24px or 48px
+to maintain vertical rhythm:
+
+.my-new-div {
+	margin: 24px 0;
+	margin: 1.714285714rem 0; ( 24 / $rembase )
+}
+
+---------- Further reading
+
+http://snook.ca/archives/html_and_css/font-size-with-rem
+http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
+
+
+/***** Reset *****/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 42px;
+	line-height: 48px;
+	letter-spacing: 0px;
+	font-weight: 300;
+}
+
+.large, h2 {
+	font-size: 20px;
+	line-height: 24px;
+	font-weight:400;
+margin-top:12px;
+	color:#0093CB;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font-size: 14px/20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: 1.8;
+}
+
+a, a:visited , a:link {
+	text-decoration: none;
+	color: #666;
+	font-weight: 400;
+}
+
+a:hover {
+	color:#0093CB;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+p {margin:5px 0px 10px 0px;}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgba(0, 147, 203, 1); color: #FFF;}
+::-moz-selection 	{background: rgba(0, 147, 203, 1); color: #FFF;}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(198, 216, 45, 0.5);}
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {
+	background: rgb(232,232,232);
+	color: #666;
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+
+}
+
+
+header#main { 
+	min-height: 60px;
+	width:100%;		
+	background-color: #0093CB;
+	padding:24px 0;
+	position:relative;
+	z-index:1000;
+}
+
+.smallheader {background-color:#F00 !important;}
+
+.wrapper {
+	width:920px; /* 896px max width but 12 px margin around inner divs*/
+	margin:0px auto;
+	position: relative;
+}
+
+#firstwrapper {
+	padding-top:0px;
+}
+
+.plain-text {
+	padding:12px;
+}
+
+#page {
+	position: relative;
+	z-index: 200;
+}
+
+#logo {
+	position: absolute;
+	left:0px;
+	top:0px;
+	width:100px;
+	height:60px; 
+	background:
+		url('images/logo.svg') no-repeat top left;	
+	background-size:contain;
+	margin-left:12px;
+}
+
+#menubutton {display:none;
+			position: absolute;
+		top: 8px; right: 10px;
+			background:
+		url('images/menu.svg') no-repeat top left;	
+		width: 44px; height: 44px; 
+}
+.clear {clear: both;}
+
+#site-navigation {position: relative; display: block;}
+#site-navigation div {	text-align: center;}
+
+.hidemenu {display: block !important;}
+
+
+#site-navigation ul {
+	list-style: none;
+	display: block;
+	margin: 0px auto;
+}
+#site-navigation li {
+	display: inline-block;
+	position: relative;
+}
+#site-navigation li a {
+	font-size: 15pt;
+	color: #FFF;
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 300; text-transform: capitalize; margin:0px 10px; padding:0px;
+	text-decoration: none;
+}
+
+#site-navigation .current_page_item a {
+	font-weight: 600;
+}
+
+#site-navigation li a:hover {
+	color: #e6e6e6;
+}
+
+	#content {
+		width:100%;
+		position: relative;
+		z-index: 200;
+	}
+
+	#content .inner {	
+		background-color: #FFF;
+		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+		box-sizing: border-box;
+		margin:12px;
+	}
+
+	#content .inner .image {
+		height:300px;
+		width:896px;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: top left;
+	}
+
+
+
+article {
+	width:436px;
+	margin:12px;		
+	box-sizing:border-box;
+	float:left;
+	font-weight: 300;
+	background-color: #FFF;
+	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+	box-sizing: border-box;
+
+	height: 436px;
+}
+
+article header {
+	height:145px;
+	width:436px;
+	background-color: #666;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+
+
+article .title {
+	color: #666;
+	font-size: 24px;
+
+	
+	margin:24px 24px 0px 24px;
+	line-height:1.6;
+	font-weight: 300; height:72px;
+	clear: both;
+}
+
+article .text {
+	
+	margin:0px 24px;
+	clear: both;
+	font-weight: 300;
+	line-height: 1.6;
+	height:141px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+}
+
+article .page-type{
+	
+	height:171px !important;
+}
+
+article footer {
+	height: 30px;
+	margin:0px 24px 24px 24px;
+}
+
+article footer .date {
+	color:#D8D8D8;
+	float: left;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+article footer .tags {
+	float: right;
+	font-weight: 300;
+	height: 30px; 
+	font-size: 14px;
+}
+
+article footer .tags ul {list-style: none;}
+article footer .tags li {display: inline; margin:0px 3px; padding:2px 5px; background-color: #FFF; color:#FFF; border-radius: 3px;}
+
+article footer .tags li:hover {background-color: #0093CB;}
+
+article footer .tags li a,
+article footer .tags li a:visited,
+article footer .tags li a:link {
+	font-weight: 300;
+	color:#D8D8D8;
+}
+
+article footer .tags li:hover a {
+	color: #FFF;
+}
+
+#share {height:30px; margin:12px 0px;}
+#share .title {float:left; font-size:16px; margin-right:12px; color:#D8D8D8;}
+#share .plugins {float:left;}
+#share .plugin {float:left; margin-right: 12px; width:80px;}
+#share .twitter, #share .google {margin-top:5px;}
+
+
+
+footer.main {width:100%; background-color: #666; box-sizing:border-box; margin-top:24px;}
+
+footer.main a.icon {width: 24px; height:24px; background-image: url(images/icons.svg); margin:12px 0px 12px 12px; display: block; float:left;}
+footer.main a.icon:hover {background-position-y: -24px;}
+
+
+footer.main a.twitter {background-position: 0px 0px;}
+footer.main a.facebook {background-position: -24px 0px;}
+footer.main a.github {background-position: -48px 0px;}
+footer.main a.foursquare {background-position: -72px 0px;}
+footer.main a.google {background-position: -96px 0px;}
+footer.main a.linkedin {background-position: -120px 0px;}
+footer.main a.me {background-position: -144px 0px;}
+
+@media only screen and (min-width: 992px) {
+
+.columns {
+
+-moz-column-count:2; /* Firefox */
+-webkit-column-count:2; /* Safari and Chrome */
+column-count:2;
+
+-moz-column-gap:20px; /* Firefox */
+-webkit-column-gap:20px; /* Safari and Chrome */
+column-gap:20px;
+
+}
+
+#content .inner .text {padding:46px 104px;}
+
+}
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+body { font-size: 13px;}
+
+	.wrapper {
+		width:736px; /* 712px max width but 12 px margin around inner divs*/
+	}
+
+	.wrapper-page {
+		width:736px; /* 712px max width but 12 px margin around inner divs*/
+	margin:0px auto;
+	}
+
+#site-navigation div {	text-align: right;}
+
+#site-navigation li:last-child a {
+	margin-right:12px; padding-right:0px;
+}
+
+	#content .inner .image {
+		height:240px;
+		width:712px;
+		background-color: #FFF;
+
+
+	}
+
+article {
+	width:344px;
+	margin:12px;		
+	box-sizing:border-box;
+	float:left;
+}
+
+article .inner {
+	background-color: #FFF;
+	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+	box-sizing: border-box;
+	width:100%;
+	height: 344px;
+}
+
+article header {
+	height:115px;
+	width:344px;
+	background-color: #FFF;
+	background-size: 100%;
+	background-repeat: no-repeat !important;
+}
+
+.post .inner .text {
+	width:100%;
+	box-sizing:border-box;
+	padding:24px;
+	font-weight: 400;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 140px;
+
+}
+
+.post .inner h2 {
+	color: #666;
+
+	font-size: 16pt;
+	box-sizing:border-box;
+	padding:12px 24px 0px 24px;
+	line-height:1.3;
+}
+
+#content .inner .text {padding:46px 12px; font-size:16px;}
+
+
+.columns {
+
+-moz-column-count:2; /* Firefox */
+-webkit-column-count:2; /* Safari and Chrome */
+column-count:2;
+
+-moz-column-gap:20px; /* Firefox */
+-webkit-column-gap:20px; /* Safari and Chrome */
+column-gap:20px;
+
+}
+
+.columns p {
+
+-webkit-column-break-inside:avoid;
+-moz-column-break-inside:avoid;
+-o-column-break-inside:avoid;
+-ms-column-break-inside:avoid;
+column-break-inside:avoid;
+
+}
+}
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+
+	header#main {
+		padding-top: 24px !important;
+
+		height: auto;
+		min-height: 60px;
+
+	position:relative;
+
+	}
+
+	.subpages {height:400px !important;}
+
+	input, textarea {width: 252px; margin:0px; padding:0px;}
+
+	#logo {
+		margin-left: 10px;
+	}
+
+	#menubutton {
+		display: block;
+	}
+	.wrapper {
+		width:320px; /* 252px max width but 12 px margin around inner divs*/
+	}
+
+		#firstwrapper {
+	padding-top:0px;
+}
+
+	.wrapper-page {
+		width:320px;
+	}
+
+	.wrapper.content {width:300px;}
+
+	#site-navigation {
+		padding-top: 80px;
+		margin: 0px 10px;
+		
+	}
+
+	.hidemenu {display: none !important;}
+
+	#page {	
+		width:100%;
+	}
+
+	#content .inner {
+
+		margin: 10px;
+	}
+	#content .inner .image {
+		height:100px;
+		width:300px;
+	}
+
+	.plain-text {padding:24px 10px;}
+
+#site-navigation div {	text-align: left;}
+#site-navigation ul {
+	list-style: none;
+	display: block;
+	margin: 0px auto;
+}
+
+#site-navigation li {
+	display: block;
+	position: relative;
+}
+
+#site-navigation li a {
+	font-size: 18pt;
+	color: #FFF;
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 300; 
+	text-transform: capitalize; 
+	margin:0px; 
+	padding:0px;
+	text-decoration: none;
+	display: block;
+}
+	article {
+		width:300px;
+		margin:10px 10px 0px 10px;		
+		float:left;
+		background-color: #FFF;
+		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+		height:300px;
+	}
+
+	article:last-child {
+
+		margin:10px;		
+
+	}
+
+	article header {
+		height:100px;
+		width:300px;
+		background-color: #666;
+	}
+
+	article .title {
+		margin:12px 12px 0px 12px;
+		font-size:18px;
+		height:26px;
+	}
+
+	article .text {
+		height:74px;
+		margin:12px;
+		font-size: 13px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+	}
+
+	article footer {
+		height:24px;
+		margin:0px 12px 12px 12px;
+
+	}
+
+	article footer .tags {
+		float:left;
+		margin-left:-8px;
+	}
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	.wrapper {
+		width:460px; /* 436px max width but 12 px margin around inner divs*/
+	}
+
+
+
+	#page {
+		width: 436px;
+		margin:12px;
+	}
+
+	#content .inner .image {
+		height:146px;
+		width:440px;
+
+	}
+
+	a:nth-child(odd) .post { margin-left: 92px;}
+	
+}
