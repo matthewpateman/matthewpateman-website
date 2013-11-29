@@ -18,8 +18,6 @@ get_header(); ?>
 
 <div id="firstwrapper" class="wrapper">
 	<div id="page">
-
-<h1>Blog</h1>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>

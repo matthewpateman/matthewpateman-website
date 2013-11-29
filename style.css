@@ -162,7 +162,7 @@ header#main {
 .smallheader {background-color:#F00 !important;}
 
 .wrapper {
-	width:920px; /* 896px max width but 12 px margin around inner divs*/
+	width:1024px; /* 896px max width but 12 px margin around inner divs*/
 	margin:0px auto;
 	position: relative;
 }
@@ -236,14 +236,14 @@ header#main {
 .image {
 		display: block;
 		position: relative;
-		width:920px;
+		width:1024px;
 		height: auto;
 		margin: 0 auto;
 }
 
 #content {
 	background-color: #FFF;
-	width:920px;
+	width:1024px;
 	position: relative;
 	z-index: 200;
 	margin: 0;
@@ -261,25 +261,20 @@ header#main {
 }
 
 article {
-	width:436px;
-	margin:12px;		
+	width:33%;
+	outline: 1px solid rgb(232,232,232);	
 	box-sizing:border-box;
 	float:left;
 	font-weight: 300;
 	background-color: #FFF;
-	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
 	box-sizing: border-box;
-
+	padding: 36px;
 	height: 436px;
+	position: relative;
 }
 
-article header {
-	height:145px;
-	width:436px;
-	background-color: #666;
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
+article img {width:100%; position: relative; height: auto;}
+
 
 
 
@@ -354,7 +349,7 @@ article footer .tags li:hover a {
 
 
 
-footer.main {width:100%; background-color: #666; box-sizing:border-box; margin-top:24px;}
+footer.main {width:100%; background-color: #666; box-sizing:border-box; margin-top:1px;}
 
 footer.main a.icon {width: 24px; height:24px; background-image: url(images/icons.svg); margin:12px 0px 12px 12px; display: block; float:left;}
 footer.main a.icon:hover {background-position-y: -24px;}
@@ -369,7 +364,7 @@ footer.main a.linkedin {background-position: -120px 0px;}
 footer.main a.me {background-position: -144px 0px;}
 
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
 
 .columns {
 
@@ -393,14 +388,14 @@ column-gap:20px;
 cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
 
-@media only screen and (min-width: 768px) and (max-width: 919px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
 .image {
 	width: 100%;
 }
 
 .wrapper {
-		max-width:919px; /* 712px max width but 12 px margin around inner divs*/
+		max-width:1023px; /* 712px max width but 12 px margin around inner divs*/
 		width:auto;
 	}
 
@@ -415,10 +410,7 @@ px      68    160    252    344    436    528    620    712    */
 }
 
 article {
-	width:344px;
-	margin:12px;		
-	box-sizing:border-box;
-	float:left;
+	width:50%
 }
 
 article .inner {
@@ -582,13 +574,8 @@ px      68    160    252    */
 	display: block;
 }
 	article {
-		width:300px;
-		margin:10px 10px 0px 10px;		
-		float:left;
-		background-color: #FFF;
-		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
-		height:300px;
-	}
+	width:100%;
+}
 
 	article:last-child {
 
@@ -646,7 +633,9 @@ px      68    160    252    344    436    */
 		width:100%;
 	}
 
-
+article {
+	width:50%;
+}
 
 	#page {
 		width: 436px;

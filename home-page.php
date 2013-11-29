@@ -41,7 +41,7 @@ $args=array(
   
 	'post_type' => 'page',
 	'post_parent' => 6,
-	'posts_per_page' => 2,
+	'posts_per_page' => 3,
 	'sort_order' => 'desc'  
 
   
