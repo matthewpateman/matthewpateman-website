@@ -174,7 +174,7 @@ header#main {
 }
 
 .plain-text {
-	padding:12px;
+	padding:18px 36px;
 }
 
 #page {
@@ -191,7 +191,7 @@ header#main {
 	background:
 		url('images/logo.svg') no-repeat top left;	
 	background-size:contain;
-	margin-left:12px;
+	margin-left:36px;
 }
 
 #menubutton {display:none;
@@ -283,17 +283,18 @@ article img {width:100%; position: relative; height: auto;}
 article .title {
 	color: #666;
 	font-size: 24px;
+	text-align: center;
 
 	
-	margin:24px 24px 0px 24px;
+	margin:12px 0 0 0;
 	line-height:1.6;
-	font-weight: 300; height:72px;
+	font-weight: 500; height:72px;
 	clear: both;
 }
 
 article .text {
 	
-	margin:0px 24px;
+	margin:0;
 	clear: both;
 	font-weight: 300;
 	line-height: 1.6;
@@ -552,7 +553,7 @@ px      68    160    252    */
     	height: auto;
 	}
 
-	.plain-text {padding:24px 10px;}
+	.plain-text {padding:18px 36px;}
 
 #site-navigation div {	text-align: left;}
 #site-navigation ul {
@@ -579,7 +580,7 @@ px      68    160    252    */
 }
 	article {
 	width:100%;
-	height:400px;
+	height:500px;
 }
 
 	article:last-child {
@@ -595,15 +596,12 @@ px      68    160    252    */
 	}
 
 	article .title {
-		margin:12px 12px 0px 12px;
-		font-size:18px;
-		height:48px;
+
 	}
 
 	article .text {
 		height:74px;
-		margin:12px;
-		font-size: 13px;
+
 		overflow: hidden;
 		text-overflow: ellipsis;
 
