@@ -126,6 +126,8 @@ a:hover {
 
 p {margin:5px 0px 10px 0px;}
 
+
+
 /* Selection colours (easy to forget) */
 
 ::selection 	 	{background: rgba(0, 147, 203, 1); color: #FFF;}
@@ -390,6 +392,8 @@ px      68    160    252    344    436    528    620    712    */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
+.home-projects article:nth-child(3n) {display: none;}
+
 .image {
 	width: 100%;
 }
@@ -632,6 +636,8 @@ px      68    160    252    344    436    */
 	.wrapper {
 		width:100%;
 	}
+
+.home-projects article:nth-child(3n) {display: none;}
 
 article {
 	width:50%;
