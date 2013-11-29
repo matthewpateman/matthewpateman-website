@@ -159,6 +159,7 @@ header#main {
 	padding:24px 0;
 	position:relative;
 	z-index:1000;
+	margin-bottom: 1px; /* So the article outline does not cover the header */
 }
 
 .smallheader {background-color:#F00 !important;}
@@ -263,7 +264,7 @@ header#main {
 }
 
 article {
-	width:33%;
+	width:33.333%;
 	outline: 1px solid rgb(232,232,232);	
 	box-sizing:border-box;
 	float:left;
@@ -352,7 +353,11 @@ article footer .tags li:hover a {
 
 
 
-footer.main {width:100%; background-color: #666; box-sizing:border-box; margin-top:1px;}
+footer.main {
+	width:100%;
+	background-color: #666;
+	box-sizing:border-box;
+	margin-top:1px; /* So the article outline does not cover the header */}
 
 footer.main a.icon {width: 24px; height:24px; background-image: url(images/icons.svg); margin:12px 0px 12px 12px; display: block; float:left;}
 footer.main a.icon:hover {background-position-y: -24px;}
