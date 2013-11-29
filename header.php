@@ -94,3 +94,12 @@
 
 	</div>
 </header><!-- #masthead -->
+		<?php 
+			//Get the Thumbnail URL
+			$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(320,240), false, '' );
+			if ($src) { 
+		?>
+
+<img class="image" src="<?php echo $src[0] ?>" />
+
+			<?php } ?>

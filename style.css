@@ -194,7 +194,7 @@ header#main {
 
 #menubutton {display:none;
 			position: absolute;
-		top: 8px; right: 10px;
+		top: 8px; right: 36px;
 			background:
 		url('images/menu.svg') no-repeat top left;	
 		width: 44px; height: 44px; 
@@ -211,13 +211,14 @@ header#main {
 	list-style: none;
 	display: block;
 	margin: 0px auto;
+	padding: 12px 0;
 }
 #site-navigation li {
 	display: inline-block;
 	position: relative;
 }
 #site-navigation li a {
-	font-size: 15pt;
+	font-size: 18pt;
 	color: #FFF;
 	font-family: 'Open Sans', sans-serif; 
 	font-weight: 300; text-transform: capitalize; margin:0px 10px; padding:0px;
@@ -232,26 +233,30 @@ header#main {
 	color: #e6e6e6;
 }
 
-	#content {
-		width:100%;
+.image {
+		display: block;
 		position: relative;
-		z-index: 200;
+		width:920px;
+		height: auto;
+		margin: 0 auto;
+}
+
+#content {
+	background-color: #FFF;
+	width:920px;
+	position: relative;
+	z-index: 200;
+	margin: 0;
 	}
 
 	#content .inner {	
-		background-color: #FFF;
-		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+		
+		/*box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);*/
 		box-sizing: border-box;
-		margin:12px;
+		/*margin:12px;*/
 	}
 
-	#content .inner .image {
-		height:300px;
-		width:896px;
-		background-repeat: no-repeat;
-		background-size: 100%;
-		background-position: top left;
-	}
+
 
 
 
@@ -363,7 +368,8 @@ footer.main a.google {background-position: -96px 0px;}
 footer.main a.linkedin {background-position: -120px 0px;}
 footer.main a.me {background-position: -144px 0px;}
 
-@media only screen and (min-width: 992px) {
+
+@media only screen and (min-width: 920px) {
 
 .columns {
 
@@ -389,32 +395,28 @@ column-gap:20px;
 cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 919px) {
 
 body { font-size: 13px;}
 
-	.wrapper {
-		width:736px; /* 712px max width but 12 px margin around inner divs*/
+.image {
+	width: 100%;
+}
+
+.wrapper {
+		max-width:919px; /* 712px max width but 12 px margin around inner divs*/
+		width:auto;
 	}
 
-	.wrapper-page {
-		width:736px; /* 712px max width but 12 px margin around inner divs*/
-	margin:0px auto;
-	}
+#content {
 
-#site-navigation div {	text-align: right;}
+	width:auto;
+
+	}
 
 #site-navigation li:last-child a {
 	margin-right:12px; padding-right:0px;
 }
-
-	#content .inner .image {
-		height:240px;
-		width:712px;
-		background-color: #FFF;
-
-
-	}
 
 article {
 	width:344px;
@@ -442,7 +444,7 @@ article header {
 .post .inner .text {
 	width:100%;
 	box-sizing:border-box;
-	padding:24px;
+	padding:46px 104px;
 	font-weight: 400;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -459,8 +461,14 @@ article header {
 	line-height:1.3;
 }
 
-#content .inner .text {padding:46px 12px; font-size:16px;}
+#content .inner .text {
+	width:100%;
+	box-sizing:border-box;
+	padding:46px 104px;
+	text-overflow: ellipsis;
 
+
+}
 
 .columns {
 
@@ -505,19 +513,21 @@ px      68    160    252    */
 
 	}
 
+	#content {width: auto;}
+
 	.subpages {height:400px !important;}
 
 	input, textarea {width: 252px; margin:0px; padding:0px;}
 
 	#logo {
-		margin-left: 10px;
+		margin-left: 36px;
 	}
 
 	#menubutton {
 		display: block;
 	}
 	.wrapper {
-		width:320px; /* 252px max width but 12 px margin around inner divs*/
+		width:100%;
 	}
 
 		#firstwrapper {
@@ -543,12 +553,20 @@ px      68    160    252    */
 	}
 
 	#content .inner {
-
-		margin: 10px;
+		
+		padding: 24px 36px;
+		box-sizing: border-box;
 	}
+
 	#content .inner .image {
 		height:100px;
 		width:300px;
+	}
+
+	.image {
+
+		width: 100%;
+    	height: auto;
 	}
 
 	.plain-text {padding:24px 10px;}
@@ -638,7 +656,7 @@ px      68    160    252    344    436    */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
 	.wrapper {
-		width:460px; /* 436px max width but 12 px margin around inner divs*/
+		width:100%;
 	}
 
 

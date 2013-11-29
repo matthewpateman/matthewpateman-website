@@ -14,22 +14,14 @@
 
 get_header(); ?>
 
-<div id="firstwrapper" class="wrapper">
+<div class="wrapper">
 	<div id="content">
 		<div class="inner">
-		<?php 
-			//Get the Thumbnail URL
-			$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(320,240), false, '' );
-			if ($src) { 
-		?>
 
-			<div class="image"  style="background-image: url('<?php echo $src[0] ?>');"></div>
 
-			<?php } else { ?>
+			
 
-			<div class="image" ></div>
 
-			<?php } ?>
 
 			<div class="text">
 				<?php while ( have_posts() ) : the_post(); ?>
