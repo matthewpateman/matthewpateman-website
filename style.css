@@ -583,12 +583,6 @@ px      68    160    252    */
 	height:500px;
 }
 
-	article:last-child {
-
-		margin:10px;		
-
-	}
-
 	article header {
 		height:100px;
 		width:300px;
