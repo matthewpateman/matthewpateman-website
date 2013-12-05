@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-<div id="firstwrapper" class="wrapper">
+<div id="firstwrapper" class="wrapper tabs">
 <div class="plain-text">
 <h1>Me</h1>
 <div class="columns">
@@ -31,7 +31,7 @@ get_header(); ?>
 </div>
 </div>
 </div>
-<div class="wrapper">
+<div class="wrapper tabs">
 <div class="plain-text">
 <h1>Projects</h1>
 <p><a href="projects">Here are a selection of my projects</a></p>
@@ -67,7 +67,7 @@ wp_reset_query();  // Restore global post data stomped by the_post().
 
 
 
-<div class="wrapper">
+<div class="wrapper tabs">
 
 <div class="plain-text">
 <h1>Blog</h1>

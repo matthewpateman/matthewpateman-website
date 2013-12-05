@@ -16,7 +16,7 @@
 
 get_header(); ?>
 
-<div id="firstwrapper" class="wrapper">
+<div id="firstwrapper" class="wrapper tabs">
 	<div id="page">
 		<?php if ( have_posts() ) : ?>
 
