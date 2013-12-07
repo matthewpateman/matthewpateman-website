@@ -88,8 +88,6 @@ wp_reset_query();  // Restore global post data stomped by the_post().
 			if ($src) { 
 		?>
 
-	<section id="header-img" data-speed="3" data-type="background" style="background:url(<?php echo $src[0] ?>)">
-		
-	</section>
+<img class="image" src="<?php echo $src[0] ?>" />
 
 			<?php } ?>
