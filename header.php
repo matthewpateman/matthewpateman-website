@@ -19,8 +19,6 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <?php 
 
@@ -39,10 +37,11 @@
 <link rel="apple-touch-icon-precomposed" sizes="72x72" 		href="<?php echo get_stylesheet_directory_uri() ?>/touch-icon-ipad.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" 	href="<?php echo get_stylesheet_directory_uri() ?>/touch-icon-iphone-retina.png" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" 	href="<?php echo get_stylesheet_directory_uri() ?>/touch-icon-ipad-retina.png" />
-<!-- Common Metadata Tags --> 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<?php 
 
-<?php get_template_part( 'content', 'meta' ); ?>
+	// META DATA
+
+get_template_part( 'content', 'meta' ); ?>
 
 
 <script type="text/javascript">
