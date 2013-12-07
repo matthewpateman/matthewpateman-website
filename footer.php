@@ -24,6 +24,25 @@
 			<div class="clear"></div>
 		</div><!-- .wrapper -->
 	</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri() ?>/script/jquery.animate.js" type="text/javascript"></script>
+<script src="<?php echo get_stylesheet_directory_uri() ?>/script/jquery.anchorScroll.js" type="text/javascript"></script>
+
+<script>
+	$(document).ready(
+		function() {
+		$("#menubutton").click(function() {
+  			$("#site-navigation").toggleClass('hidemenu');
+		});
+
+
+		
+ 	});
+
+
+</script>
+
 	 <?php wp_footer(); ?>
 </body>
 </html>

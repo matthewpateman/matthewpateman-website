@@ -24,10 +24,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-<script src="<?php echo get_stylesheet_directory_uri() ?>/script/jquery.animate.js" type="text/javascript"></script>
-<script src="<?php echo get_stylesheet_directory_uri() ?>/script/jquery.anchorScroll.js" type="text/javascript"></script>
 
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -62,20 +59,6 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
-</script>
-
-<script>
-	$(document).ready(
-		function() {
-		$("#menubutton").click(function() {
-  			$("#site-navigation").toggleClass('hidemenu');
-		});
-
-
-		
- 	});
-
 
 </script>
 
