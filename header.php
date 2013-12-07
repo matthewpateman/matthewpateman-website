@@ -49,13 +49,12 @@
 <body <?php body_class(); ?>>
 <header id="main">
 	<div class="wrapper">
-			
-			<nav id="site-navigation" role="navigation" class="hidemenu">
-				<?php wp_nav_menu( array( 'theme_location' => '', 'menu_class' => 'nav-menu', 'depth' => 1 ) ); ?>
-			</nav><!-- #site-navigation -->
-			<a href="<?php echo get_settings('home'); ?>"><div id="logo"></div></a>
-			<div id="menubutton"></div>
-			<div class="clear"></div>
+		<nav id="site-navigation" role="navigation" class="hidemenu">
+			<?php wp_nav_menu( array( 'theme_location' => '', 'menu_class' => 'nav-menu', 'depth' => 1 ) ); ?>
+		</nav><!-- #site-navigation -->
+		<a href="<?php echo get_settings('home'); ?>"><span id="logo"></span></a>
+		<div id="menubutton"></div>
+		<div class="clear"></div>
 
 	</div>
 </header>

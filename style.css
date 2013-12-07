@@ -186,6 +186,7 @@ header#main {
 
 #logo {
 	position: absolute;
+	display: block;
 	left:0px;
 	top:0px;
 	width:100px;
