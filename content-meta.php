@@ -17,7 +17,14 @@
 		$myExcerpt = str_replace($tags, "", $myExcerpt);  
 	}
 
-	// Meta 
+	// Viewport and Charset Meta 
+
+?>
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<?php
+
+	// Meta
 
 ?>
 <meta name="Designer" content="Matthew Pateman" />
@@ -27,7 +34,6 @@
 <meta name="ICBM" content="51.501249,-0.126271" />
 <meta name="Revisit-After" content="7 Days" />
 <meta name="Robots" content="Index, Follow" />
-
 <?php
 
 	// Geo Metadata Tags
