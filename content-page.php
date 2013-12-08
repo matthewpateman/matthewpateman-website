@@ -13,7 +13,7 @@
 <?php } ?>
 <?php if (!is_page('about')) { ?>
 
-<?php get_template_part( 'content', 'share2' ); } ?>
+<?php // get_template_part( 'content', 'share2' ); } ?>
 			<?php the_content(); ?>
 
 
