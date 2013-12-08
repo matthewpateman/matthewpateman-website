@@ -30,7 +30,7 @@ get_header(); ?>
 				<?php endwhile; // end of the loop. ?>
 
 
-<h2>Education</h2>
+<h1>Education</h1>
 <?php
 $args=array(
   'post_type' => 'experience',
