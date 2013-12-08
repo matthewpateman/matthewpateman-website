@@ -93,8 +93,9 @@ margin-top:12px;
 }
 
 .bigger, h3 {
-	font-size: 26px;
-	line-height: 36px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 600;
 }
 
 .big, h4 {
@@ -127,6 +128,10 @@ a:hover {
 p {margin:5px 0px 10px 0px;}
 
 
+ul
+{
+padding-left:36px;
+}
 
 /* Selection colours (easy to forget) */
 
