@@ -26,6 +26,16 @@ get_header(); ?>
 			<div class="text">
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>
+
+<h1>Experience</h1>
+<?php $category = "work"; ?> 
+<?php include(locate_template('content-experience.php')); ?>
+
+<h1>Education</h1>
+<?php $category = "education"; ?> 
+<?php include(locate_template('content-experience.php')); ?>
+
+
 				<?php endwhile; // end of the loop. ?>
 			</div><!-- .text -->
 		</div><!-- .inner -->

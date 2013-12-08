@@ -452,3 +452,88 @@ function twentytwelve_customize_preview_js() {
 	wp_enqueue_script( 'twentytwelve-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20120827', true );
 }
 add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
+
+add_action( 'init', 'register_cpt_job' );
+
+function register_cpt_job() {
+
+    $labels = array( 
+        'name' => _x( 'Jobs', 'job' ),
+        'singular_name' => _x( 'Job', 'job' ),
+        'add_new' => _x( 'Add New', 'job' ),
+        'add_new_item' => _x( 'Add New Job', 'job' ),
+        'edit_item' => _x( 'Edit Job', 'job' ),
+        'new_item' => _x( 'New Job', 'job' ),
+        'view_item' => _x( 'View Job', 'job' ),
+        'search_items' => _x( 'Search Jobs', 'job' ),
+        'not_found' => _x( 'No jobs found', 'job' ),
+        'not_found_in_trash' => _x( 'No jobs found in Trash', 'job' ),
+        'parent_item_colon' => _x( 'Parent Job:', 'job' ),
+        'menu_name' => _x( 'Jobs', 'job' ),
+    );
+
+    $args = array( 
+        'labels' => $labels,
+        'hierarchical' => true,
+        
+        'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'revisions' ),
+        
+        'public' => false,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        
+        
+        'show_in_nav_menus' => false,
+        'publicly_queryable' => true,
+        'exclude_from_search' => true,
+        'has_archive' => true,
+        'query_var' => true,
+        'can_export' => true,
+        'rewrite' => true,
+        'capability_type' => 'page'
+    );
+
+    register_post_type( 'job', $args );
+}
+add_action( 'init', 'register_cpt_experience' );
+
+function register_cpt_experience() {
+
+    $labels = array( 
+        'name' => _x( 'Experiences', 'experience' ),
+        'singular_name' => _x( 'Experience', 'experience' ),
+        'add_new' => _x( 'Add New', 'experience' ),
+        'add_new_item' => _x( 'Add New Experience', 'experience' ),
+        'edit_item' => _x( 'Edit Experience', 'experience' ),
+        'new_item' => _x( 'New Experience', 'experience' ),
+        'view_item' => _x( 'View Experience', 'experience' ),
+        'search_items' => _x( 'Search Experiences', 'experience' ),
+        'not_found' => _x( 'No experiences found', 'experience' ),
+        'not_found_in_trash' => _x( 'No experiences found in Trash', 'experience' ),
+        'parent_item_colon' => _x( 'Parent Experience:', 'experience' ),
+        'menu_name' => _x( 'Experiences', 'experience' ),
+    );
+
+    $args = array( 
+        'labels' => $labels,
+        'hierarchical' => true,
+        
+        'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail',  'custom-fields', 'revisions', 'page-attributes' ),
+        'taxonomies' => array( 'category', 'page-category' ),
+        'public' => false,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 20,
+        
+        'show_in_nav_menus' => false,
+        'publicly_queryable' => true,
+        'exclude_from_search' => true,
+        'has_archive' => true,
+        'query_var' => true,
+        'can_export' => true,
+        'rewrite' => true,
+        'capability_type' => 'page'
+    );
+
+    register_post_type( 'experience', $args );
+}
