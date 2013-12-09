@@ -7,7 +7,7 @@
  * @since Twenty Twelve 1.0
  */
 ?>
-<h1 class="entry-title"><?php the_title(); ?></h1>
+<span class="gigantic"><?php the_title(); ?></span>
 <?php if (is_single()) { ?>
 	<div class="date"><?php the_date(); ?></div>
 <?php } ?>

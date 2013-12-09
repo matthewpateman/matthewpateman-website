@@ -72,30 +72,30 @@ a img {border: 0;}
 	------------------	*/
 
 .gigantic {
-	font-size: 110px;
-	line-height: 120px;
-	letter-spacing: -2px;
-}
-
-.huge, h1 {
 	font-size: 42px;
 	line-height: 48px;
 	letter-spacing: 0px;
 	font-weight: 300;
 }
 
+.huge, h1 {
+	font-size: 32px;
+	line-height: 42px;
+	letter-spacing: 0px;
+	font-weight: 300;
+}
+
 .large, h2 {
-	font-size: 22px;
-	line-height: 24px;
-	font-weight:400;
-margin-top:12px;
+	font-size: 15px;
+	line-height: 32px;
+	font-weight:600;
 	color:#0093CB;
 }
 
 .bigger, h3 {
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: 600;
+	font-size: 15px;
+	line-height: 21px;
+	font-weight: 400;
 }
 
 .big, h4 {
@@ -104,10 +104,10 @@ margin-top:12px;
 }
 
 body {
-	font-size: 20px;
+	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	line-height: 1.8;
+	line-height: 21px;
 }
 
 a, a:visited , a:link {
@@ -158,15 +158,12 @@ body {
 
 
 header#main { 
-	min-height: 60px;
+	min-height: 30px;
 	width:100%;		
 	background-color: #0093CB;
-	padding:24px 0;
+	padding:15px 0;
 	position:relative;
 	z-index:1000;
-	-webkit-box-shadow:0px 0px 5px rgba(0,0,0,0.5);
-	-moz-box-shadow:0px 0px 5px rgba(0,0,0,0.5);	
-	box-shadow:0px 0px 5px rgba(0,0,0,0.5);
 }
 
 .smallheader {background-color:#F00 !important;}
@@ -197,8 +194,8 @@ header#main {
 	display: block;
 	left:0px;
 	top:0px;
-	width:100px;
-	height:60px; 
+	width:74px;
+	height:30px; 
 	background:
 		url('images/logo.svg') no-repeat top left;	
 	background-size:contain;
@@ -207,7 +204,7 @@ header#main {
 
 #menubutton {display:none;
 			position: absolute;
-		top: 8px; right: 36px;
+		top: -6px; right: 36px;
 			background:
 		url('images/menu.svg') no-repeat top left;	
 		width: 44px; height: 44px; 
@@ -224,14 +221,14 @@ header#main {
 	list-style: none;
 	display: block;
 	margin: 0px auto;
-	padding: 12px 0;
+	padding: 3px 0;
 }
 #site-navigation li {
 	display: inline-block;
 	position: relative;
 }
 #site-navigation li a {
-	font-size: 18pt;
+	font-size: 18px;
 	color: #FFF;
 	font-family: 'Open Sans', sans-serif; 
 	font-weight: 300; text-transform: capitalize; margin:0px 10px; padding:0px;
@@ -503,10 +500,9 @@ px      68    160    252    */
 @media only screen and (max-width: 767px) {
 
 	header#main {
-		padding-top: 24px !important;
 
 		height: auto;
-		min-height: 60px;
+		min-height: 30px;
 
 	position:relative;
 
@@ -540,7 +536,7 @@ px      68    160    252    */
 	.wrapper.content {width:300px;}
 
 	#site-navigation {
-		padding-top: 80px;
+		padding-top: 50px;
 		margin: 0px 36px;
 		
 	}
@@ -583,13 +579,13 @@ px      68    160    252    */
 }
 
 #site-navigation li a {
-	font-size: 18pt;
+	font-size: 15pt;
 	color: #FFF;
 	font-family: 'Open Sans', sans-serif; 
 	font-weight: 300; 
 	text-transform: capitalize; 
 	margin:0px; 
-	padding:0px;
+	padding:10px 0px;
 	text-decoration: none;
 	display: block;
 }
