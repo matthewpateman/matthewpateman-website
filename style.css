@@ -181,7 +181,7 @@ header#main {
 }
 
 .plain-text {
-	padding:18px 36px;
+	padding:18px 0px;
 }
 
 #page {
@@ -383,9 +383,9 @@ footer.main a.me {background-position: -144px 0px;}
 
 .columns {
 
--moz-column-count:2; /* Firefox */
--webkit-column-count:2; /* Safari and Chrome */
-column-count:2;
+-moz-column-count:3; /* Firefox */
+-webkit-column-count:3; /* Safari and Chrome */
+column-count:3;
 
 -moz-column-gap:20px; /* Firefox */
 -webkit-column-gap:20px; /* Safari and Chrome */
