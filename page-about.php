@@ -44,9 +44,10 @@ $my_query = null;
 $my_query = new WP_Query($args );
 if( $my_query->have_posts() ) {
   while ($my_query->have_posts()) : $my_query->the_post();
+  $location = get_post_meta($post->ID, 'location', true);
 
  ?>
-<p><?php the_title(); ?></p>
+<p><?php the_title(); ?> - <?php echo $location; ?></p>
 
 <?php
 
