@@ -30,7 +30,8 @@ get_header(); ?>
 				<?php endwhile; // end of the loop. ?>
 
 
-<h1>Education</h1>
+<h2>Education</h2>
+<ul>
 <?php
 $args=array(
   'post_type' => 'experience',
@@ -47,7 +48,7 @@ if( $my_query->have_posts() ) {
   $location = get_post_meta($post->ID, 'location', true);
 
  ?>
-<p><?php the_title(); ?> - <?php echo $location; ?></p>
+<li><?php the_title(); ?> - <?php echo $location; ?></li>
 
 <?php
 
@@ -55,6 +56,7 @@ if( $my_query->have_posts() ) {
 }
 wp_reset_query();  // Restore global post data stomped by the_post().
 ?>
+</ul>
 
 			</div><!-- .text -->
 		</div><!-- .inner -->
