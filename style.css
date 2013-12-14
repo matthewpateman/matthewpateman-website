@@ -251,6 +251,8 @@ header#main {
 		margin: 0 auto;
 }
 
+.page-title {padding-bottom:36px !important; display: block;}
+
 #content {
 	background-color: #FFF;
 	width:1024px;
@@ -268,7 +270,15 @@ header#main {
 	width:100%;
 	box-sizing:border-box;
 	text-overflow: ellipsis;
+	position: relative;
 }
+
+#content .inner .text img{
+	max-width:100%;
+	height: auto;
+	position: relative;
+}
+
 
 article {
 	width:33.333%;
