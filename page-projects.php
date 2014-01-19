@@ -14,7 +14,7 @@
  */
 
 get_header(); ?>
-<div id="firstwrapper" class="wrapper tabs">
+<div id="firstwrapper" class="articles">
 
 
 

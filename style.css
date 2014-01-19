@@ -164,6 +164,12 @@ body {
 		box-sizing: border-box;
 	}
 
+.articles
+	{
+		width:1024px;
+		margin:0px auto;
+	}
+
 	nav {
 		position:absolute;
 		z-index: 600;
@@ -197,14 +203,15 @@ nav ul {
 .smallheader {background-color:#F00 !important;}
 
 
-.tabs {padding: 1px 0px !important; /* So the article outline does not cover the header or footer */}
+.tabs {padding-top: 1px !important; /* So the article outline does not cover the header or footer */ }
 
 #firstwrapper {
 	padding-top:0px;
 }
 
 .plain-text {
-	padding:18px 0px;
+	padding-top:18px;
+	padding:bottom:18px;
 }
 
 #page {
@@ -399,6 +406,11 @@ px      68    160    252    344    436    528    620    712    */
 	padding: 0 10px;
 }
 
+.articles
+	{
+		width:100%;
+		margin:0px auto;
+	}
 
 #content {
 
@@ -483,6 +495,12 @@ px      68    160    252    */
 		width:280px;
 		margin: 0 auto;
 		padding: 0;
+	}
+
+	.articles{
+
+		width:100%;
+		margin:0px auto;
 	}
 
 	header {

@@ -36,12 +36,11 @@ get_header(); ?>
 </div>
 </div>
 </div>
-<div class="wrapper tabs">
-<div class="plain-text">
+<div class="plain-text wrapper">
 <h1>Projects</h1>
 <p><a href="projects">Here are a selection of my projects</a></p>
 </div>
-<div class="home-projects">
+<div class="home-projects articles">
 <?php
 $args=array(
   
@@ -71,14 +70,11 @@ wp_reset_query();  // Restore global post data stomped by the_post().
 </div>
 
 
-
-<div class="wrapper tabs">
-
-<div class="plain-text">
+<div class="plain-text wrapper">
 <h1>Blog</h1>
 <p><a href="blog">View my blog</a></p>
 </div>
-
+<div class="home-projects articles">
 <?php
 $args=array(
   
@@ -101,6 +97,7 @@ if( $my_query->have_posts() ) {
 }
 wp_reset_query();  // Restore global post data stomped by the_post().
 ?>
+</div>
 <div class="clear"></div>
 </div>
 
