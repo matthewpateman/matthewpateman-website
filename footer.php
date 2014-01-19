@@ -32,15 +32,13 @@
 <script>
 	$(document).ready(
 		function() {
-		$("#menubutton").click(function() {
-  			$("#site-navigation").toggleClass('hidemenu');
+		$("#menu").click(function() {
+  			$("nav").toggleClass('hidemenu');
 		});
 
 
 		
  	});
-
-
 </script>
 
 	 <?php wp_footer(); ?>

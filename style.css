@@ -156,24 +156,46 @@ body {
 
 }
 
+.wrapper
+	{
+		width:1024px;
+		margin:0 auto;
+		padding:0 10px;
+		box-sizing: border-box;
+	}
 
-header#main { 
-	min-height: 31px;
-	width:100%;		
-	background: #E6E6E6;
-	padding:21px 0;
-	position:relative;
-	z-index:1000;
-	border-bottom:1px solid #DCDCDC;
-}
+	nav {
+		position:absolute;
+		z-index: 600;
+		top:25px;
+		left:50%;
+
+	}
+
+
+nav ul {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		margin-left:-50%;
+	}
+
+	nav ul li {
+		height: 40px;
+		padding: 0 5px;
+		box-sizing:border-box;
+		font-size: 18px;
+		font-weight: 400;
+		float:left;
+	}
+
+	nav ul li .icon {display: none;}
+	nav ul li span {display: block; float: left; padding:5px;}
+
+.hidemenu {display:block;}
 
 .smallheader {background-color:#F00 !important;}
 
-.wrapper {
-	width:1024px; /* 896px max width but 12 px margin around inner divs*/
-	margin:0px auto;
-	position: relative;
-}
 
 .tabs {padding: 1px 0px !important; /* So the article outline does not cover the header or footer */}
 
@@ -190,59 +212,9 @@ header#main {
 	z-index: 200;
 }
 
-#logo {
-	position: absolute;
-	display: block;
-	left:0px;
-	top:0px;
-	width:75px;
-	height:31px; 
-	background:
-		url('images/logo.svg') no-repeat top left;	
-	background-size:contain;
-	margin-left:36px;
-}
 
-#menubutton {display:none;
-			position: absolute;
-		top: -6px; right: 36px;
-			background:
-		url('images/menu.svg') no-repeat top left;	
-		width: 44px; height: 44px; 
-}
+
 .clear {clear: both;}
-
-#site-navigation {position: relative; display: block;}
-#site-navigation div {	text-align: center;}
-
-.hidemenu {display: block !important;}
-
-
-#site-navigation ul {
-	list-style: none;
-	display: block;
-	margin: 0px auto;
-	padding: 3px 0;
-}
-#site-navigation li {
-	display: inline-block;
-	position: relative;
-}
-#site-navigation li a {
-	font-size: 18px;
-	color: #6D747A;
-	font-family: 'Open Sans', sans-serif; 
-	font-weight: 300; text-transform: capitalize; margin:0px 10px; padding:0px;
-	text-decoration: none;
-}
-
-#site-navigation .current_page_item a {
-	font-weight: 600;
-}
-
-#site-navigation li a:hover {
-	color: #0093CB;
-}
 
 .image {
 		display: block;
@@ -414,7 +386,7 @@ column-gap:20px;
 cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
 
 .home-projects article:nth-child(3n) {display: none;}
 
@@ -423,19 +395,16 @@ px      68    160    252    344    436    528    620    712    */
 }
 
 .wrapper {
-		max-width:1023px; /* 712px max width but 12 px margin around inner divs*/
-		width:auto;
-	}
+	width: 100%;
+	padding: 0 10px;
+}
+
 
 #content {
 
 	width:auto;
 
 	}
-
-#site-navigation li:last-child a {
-	margin-right:12px; padding-right:0px;
-}
 
 article {
 	width:50%;
@@ -508,18 +477,25 @@ column-break-inside:avoid;
 cols    1     2      3
 px      68    160    252    */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
 
-header#main { 
-	min-height: 31px;
-	width:100%;		
-	padding:11px 0;
-	position:relative;
-	z-index:1000;
-	height: auto;
-	position:relative;
+	.wrapper {
+		width:280px;
+		margin: 0 auto;
+	}
 
-}
+	header {
+		height: 50px;
+	}
+
+	nav {position:absolute; top:51px; width: 100%; z-index: 600; left:0px;}
+	nav ul {margin: 0px; padding: 0px; list-style: none;}
+	nav ul li{height: 44px; border-bottom: 1px solid #DCDCDC; box-sizing:border-box; font-size: 14px; background: #FFF; font-weight: 600; width: 100%; padding: 0;}
+	nav ul li a {display:block; width:280px; margin:0 auto; padding:10px 0;}
+
+	nav ul li span {display: block;}
+
+	.hidemenu {display:none;}
 
 	#content {width: auto;}
 
@@ -527,16 +503,11 @@ header#main {
 
 	input, textarea {width: 252px; margin:0px; padding:0px;}
 
-	#logo {
-		margin-left: 36px;
-	}
 
 	#menubutton {
 		display: block;
 	}
-	.wrapper {
-		width:100%;
-	}
+
 
 		#firstwrapper {
 	padding-top:0px;
@@ -548,13 +519,6 @@ header#main {
 
 	.wrapper.content {width:300px;}
 
-	#site-navigation {
-		padding-top: 50px;
-		margin: 0px 36px;
-		
-	}
-
-	.hidemenu {display: none !important;}
 
 	#page {	
 		width:100%;
@@ -577,32 +541,9 @@ header#main {
     	height: auto;
 	}
 
-	.plain-text {padding:18px 36px;}
+	.plain-text {padding:18px 0px;}
 
-#site-navigation div {	text-align: left;}
-#site-navigation ul {
-	list-style: none;
-	display: block;
-	margin: 0px auto;
-}
 
-#site-navigation li {
-	display: block;
-	position: relative;
-}
-
-#site-navigation li a {
-	font-size: 15pt;
-
-	font-family: 'Open Sans', sans-serif; 
-	font-weight: 300; 
-	text-transform: capitalize; 
-	margin:0px; 
-	padding:10px 0px;
-	text-decoration: none;
-	display: block;
-
-}
 	article {
 	width:100%;
 	height:500px;
@@ -647,15 +588,46 @@ header#main {
 		Inherits styles from: Default Layout, Mobile Layout.
 ------------------------------------------------------------
 cols    1     2      3      4      5
-px      68    160    252    344    436    */
+px      68    160    252    344    436    
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
 
-
-	.wrapper {
-		width:100%;
+.wrapper
+	{
+		width:1024px;
+		margin:0 auto;
+		padding:0 10px;
+		box-sizing: border-box;
 	}
+
+	header {
+		height: 70px;
+	}
+
+	nav ul {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		margin-left:-50%;
+	}
+
+	nav ul li {
+		height: 40px;
+		padding: 0;
+		box-sizing:border-box;
+		font-size: 18px;
+		font-weight: 400;
+		float:left;
+		border:none;
+		background: transparent;
+	}
+
+	nav ul li .icon {display: none;}
+	nav ul li span {display: block; float: left; padding:5px;}
+
+	.hidemenu {display:block;}
+
 
 .home-projects article:nth-child(3n) {display: none;}
 
@@ -678,3 +650,5 @@ article {
 	a:nth-child(odd) .post { margin-left: 92px;}
 	
 }
+
+*/
