@@ -102,11 +102,6 @@ function twentytwelve_scripts_styles() {
 		wp_enqueue_script( 'comment-reply' );
 
 	/*
-	 * Adds JavaScript for handling the navigation menu hide-and-show behavior.
-	 */
-	wp_enqueue_script( 'twentytwelve-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0', true );
-
-	/*
 	 * Loads our special font CSS file.
 	 *
 	 * The use of Open Sans by default is localized. For languages that use
@@ -137,22 +132,17 @@ function twentytwelve_scripts_styles() {
 
 		$protocol = is_ssl() ? 'https' : 'http';
 		$query_args = array(
-			'family' => 'Open+Sans:400italic,700italic,400,700',
+			'family' => 'Open+Sans:400,300,600',
 			'subset' => $subsets,
 		);
 		wp_enqueue_style( 'twentytwelve-fonts', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
 	}
-
+ 
 	/*
 	 * Loads our main stylesheet.
 	 */
 	wp_enqueue_style( 'twentytwelve-style', get_stylesheet_uri() );
 
-	/*
-	 * Loads the Internet Explorer specific stylesheet.
-	 */
-	wp_enqueue_style( 'twentytwelve-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentytwelve-style' ), '20121010' );
-	$wp_styles->add_data( 'twentytwelve-ie', 'conditional', 'lt IE 9' );
 }
 add_action( 'wp_enqueue_scripts', 'twentytwelve_scripts_styles' );
 

@@ -25,22 +25,15 @@
 		</div><!-- .wrapper -->
 	</footer>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri() ?>/script/jquery.animate.js" type="text/javascript"></script>
-<script src="<?php echo get_stylesheet_directory_uri() ?>/script/jquery.anchorScroll.js" type="text/javascript"></script>
-
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script>
 	$(document).ready(
 		function() {
 		$("#menu").click(function() {
   			$("nav").toggleClass('hidemenu');
-		});
-
-
-		
+		});		
  	});
 </script>
-
 	 <?php wp_footer(); ?>
 </body>
 </html>
