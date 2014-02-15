@@ -188,9 +188,9 @@ nav ul {
 
 	nav ul li {
 		height: 40px;
-		padding: 0 5px;
+		padding: 0 10px;
 		box-sizing:border-box;
-		font-size: 18px;
+		font-size: 20px;
 		font-weight: 400;
 		float:left;
 	}
