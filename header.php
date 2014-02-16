@@ -58,6 +58,10 @@ body {
 	fill:#6D747A;
 }
 
+#image {
+	width:100%;
+	}
+
 @media all and (min-width: 481px) {
 
 	header {
@@ -103,9 +107,29 @@ body {
 }
 
 </style>
-
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+<script>
+
+function getHeight() {
+
+	var height = window.innerHeight - document.getElementsByTagName('header')[0].offsetHeight;
+	document.getElementById("image").style.height= height + "px" ;
+
+}
+
+window.onresize=function(){
+
+	getHeight();
+
+};
+
+window.onload=function() {
+	getHeight();
+}
+
+</script>
 
 <?php 
 
@@ -198,6 +222,6 @@ wp_reset_query();  // Restore global post data stomped by the_post().
 			if ($src) { 
 		?>
 
-<img class="image" src="<?php echo $src[0] ?>" />
+<div id="image" style="background:url('<?php echo $src[0] ?>'); background-size: cover; background-position: bottom center;"></div>
 
 			<?php } ?>
