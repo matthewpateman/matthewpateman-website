@@ -222,6 +222,6 @@ wp_reset_query();  // Restore global post data stomped by the_post().
 			if ($src) { 
 		?>
 
-<div id="image" style="background:url('<?php echo $src[0] ?>'); background-size: cover; background-position: bottom center;"></div>
+<div id="image" style="background:url('<?php echo $src[0] ?>'); background-size: cover; background-position: bottom center; background-repeat: no-repeat;"></div>
 
 			<?php } ?>
