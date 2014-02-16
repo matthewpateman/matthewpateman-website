@@ -60,7 +60,20 @@ body {
 
 #image {
 	width:100%;
+	position: relative;
+	height:200px;
 	}
+
+#image span {
+
+	position:absolute;
+	bottom: 24px;
+	color: #E6E6E6;
+	font-size: 32px;
+	line-height: 42px;
+	letter-spacing: 0px;
+	font-weight: 300;
+}
 
 @media all and (min-width: 481px) {
 
@@ -222,6 +235,14 @@ wp_reset_query();  // Restore global post data stomped by the_post().
 			if ($src) { 
 		?>
 
-<div id="image" style="background:url('<?php echo $src[0] ?>'); background-size: cover; background-position: bottom center; background-repeat: no-repeat;"></div>
+<div id="image" style="
+		background:-webkit-linear-gradient(top, rgba(0,0,0,0.0) 0%,rgba(0,0,0,0.4) 100%), url('<?php echo $src[0] ?>');
+		background-size: cover;
+		background-position: bottom center;
+		background-repeat: no-repeat;">
+	<div class="wrapper">
+	<span><?php the_title(); ?></span>
+</div>
+	</div>
 
 			<?php } ?>

@@ -15,22 +15,18 @@
 
 get_header(); ?>
 
+<div class="wrapper first">
+
+	<div class="text">
+		<?php while ( have_posts() ) : the_post(); ?>
+			<?php get_template_part( 'content', 'page' ); ?>
+		<?php endwhile; // end of the loop. ?>
+	</div><!-- .text -->
+</div>
+
 <div class="wrapper">
-	<div id="content">
-		<div class="inner">
-
-
-			
-
-
-
-			<div class="text">
-				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part( 'content', 'page' ); ?>
-				<?php endwhile; // end of the loop. ?>
-
-
-<h2>Education</h2>
+	<div class="text">
+		<h2>Education</h2>
 <ul>
 <?php
 $args=array(
@@ -63,8 +59,7 @@ wp_reset_query();  // Restore global post data stomped by the_post().
 </p>
 
 			</div><!-- .text -->
-		</div><!-- .inner -->
-	</div><!-- #content -->
+
 </div><!-- .wrapper -->
 
 <?php get_footer(); ?>

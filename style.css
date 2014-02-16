@@ -209,8 +209,8 @@ nav ul {
 
 .tabs {padding-top: 1px !important; /* So the article outline does not cover the header or footer */ }
 
-#firstwrapper {
-	padding-top:0px;
+.first {
+	padding-top:24px;
 }
 
 .plain-text {
