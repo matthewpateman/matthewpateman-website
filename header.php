@@ -241,7 +241,7 @@ wp_reset_query();  // Restore global post data stomped by the_post().
 		background-position: bottom center;
 		background-repeat: no-repeat;">
 	<div class="wrapper">
-	<span><?php the_title(); ?></span>
+	<span><?php if ( is_home() ) { echo "Blog"; } else {the_title(); } ?></span>
 </div>
 	</div>
 
