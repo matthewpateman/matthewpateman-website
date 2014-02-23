@@ -171,7 +171,7 @@ body {
 .articles
 	{
 		width:1024px;
-		margin:0px auto;
+		margin:10px auto;
 	}
 
 	nav {
@@ -413,7 +413,7 @@ px      68    160    252    344    436    528    620    712    */
 .articles
 	{
 		width:100%;
-		margin:0px auto;
+		margin:10px auto;
 	}
 
 #content {

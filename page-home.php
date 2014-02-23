@@ -15,10 +15,9 @@
 get_header(); ?>
 
 <div id="firstwrapper" class="wrapper tabs">
-<div class="plain-text">
-	
-<h1>Me</h1>
-<div class="columns">
+	<div class="plain-text">
+		<h1>Me</h1>
+		<div class="columns">
 
 <p><a href="http://twitter.com/matthewpateman">I follow people</a><br />
 	<a href="http://facebook.com/matthewpateman">I like things</a><br />
@@ -33,13 +32,15 @@ get_header(); ?>
 
 <p>I have a background in product design and web development. You can find a selection of my past projects here. To find out more click on any of my linked networks and feel free to tweet me <a href="https://twitter.com/intent/tweet?screen_name=matthewpateman">@matthewpateman</a>.</p>
 
+		</div>
+	</div>
 </div>
-</div>
-</div>
+
 <div class="plain-text wrapper">
-<h1>Projects</h1>
-<p><a href="projects">Here are a selection of my projects</a></p>
+	<h1>Projects</h1>
+		<p><a href="projects">Here are a selection of my projects</a></p>
 </div>
+
 <div class="home-projects articles">
 <?php
 $args=array(
@@ -65,15 +66,16 @@ if( $my_query->have_posts() ) {
 wp_reset_query();  // Restore global post data stomped by the_post().
 ?>
 
-</div>
 <div class="clear"></div>
 </div>
 
-
 <div class="plain-text wrapper">
-<h1>Blog</h1>
-<p><a href="blog">View my blog</a></p>
+	<h1>Blog</h1>
+	<p>
+		<a href="blog">View my blog</a>
+	</p>
 </div>
+
 <div class="home-projects articles">
 <?php
 $args=array(
@@ -97,8 +99,7 @@ if( $my_query->have_posts() ) {
 }
 wp_reset_query();  // Restore global post data stomped by the_post().
 ?>
-</div>
-<div class="clear"></div>
+	<div class="clear"></div>
 </div>
 
 <?php get_footer(); ?>
