@@ -94,8 +94,6 @@ body {
 
 @media all and (max-width: 480px) {
 
-
-
 	#logo {
 		width: 48px;
 		height: 30px;
@@ -114,9 +112,9 @@ body {
 
 	.icon {display: none;}
 
-
-
-
+	#grey {width: 100%; height:100%; background:rgba(0,0,0,0.5); position: absolute; z-index:200; top:0;}
+	
+	.noscroll {overflow: hidden; position: absolute; top:0; width:100%; height: 100%;}
 
 }
 
@@ -127,24 +125,15 @@ body {
 <script>
 
 function getHeight() {
-
 	var height = window.innerHeight - document.getElementsByTagName('header')[0].offsetHeight;
 	document.getElementById("image").style.height= height + "px" ;
-
 }
 
 window.onresize=function(){
-
 	getHeight();
-
 };
 
-window.onload=function() {
-	getHeight();
-}
-
 </script>
-
 <?php 
 
 	// META DATA
@@ -242,8 +231,9 @@ wp_reset_query();  // Restore global post data stomped by the_post().
 		background-position: bottom center;
 		background-repeat: no-repeat;">
 	<div class="wrapper">
-	<span><?php if ( is_home() ) { echo "Blog"; } else {the_title(); } ?></span>
-</div>
+		<span><?php if ( is_home() ) { echo "Blog"; } else {the_title(); } ?></span>
 	</div>
+</div>
+<script> getHeight(); </script>
 
 			<?php } ?>

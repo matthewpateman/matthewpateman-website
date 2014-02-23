@@ -157,7 +157,6 @@ body {
 	background: #F0F0F0;
 	color: #6D747A;
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
-
 }
 
 .wrapper
@@ -201,8 +200,6 @@ nav ul {
 
 	nav ul li .icon {display: none;}
 	nav ul li span {display: block; float: left; padding:5px;}
-
-.hidemenu {display:block;}
 
 .smallheader {background-color:#F00 !important;}
 
@@ -495,10 +492,6 @@ px      68    160    252    */
 
 @media only screen and (max-width: 480px) {
 
-	#grey {width: 100%; height:100%; background:rgba(0,0,0,0.5); position: absolute; z-index:200; top:0;}
-	
-	.noscroll {overflow: hidden; position: absolute; top:0; width:100%; height: 100%;}
-
 	.wrapper {
 		width:280px;
 		margin: 0 auto;
@@ -652,8 +645,6 @@ px      68    160    252    344    436
 
 	nav ul li .icon {display: none;}
 	nav ul li span {display: block; float: left; padding:5px;}
-
-	.hidemenu {display:block;}
 
 
 .home-projects article:nth-child(3n) {display: none;}
