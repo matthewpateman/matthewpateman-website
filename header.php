@@ -33,6 +33,7 @@ header {
 	border-bottom:1px solid #DCDCDC;
 	position: relative;
 	overflow: hidden;
+	z-index:500;
 }
 
 body {
@@ -154,7 +155,7 @@ window.onload=function() {
 ?>
 </head>
 <body <?php body_class(); ?>>
-
+<div id="bodywrapper">
 <header>
 	<div class="wrapper">
 	<div id="logo">
@@ -198,12 +199,12 @@ window.onload=function() {
 	<div class="clear"></div>
 </div>
 </header>
-<nav class="hidemenu">
+<nav class="hidden">
 
 <?php wp_nav_menu( array('depth' => 1 ) ); ?>
 
 </nav>
-
+<div id="grey" class="hidden"></div>
 
 		<?php 
 
