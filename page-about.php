@@ -23,10 +23,7 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'page' ); ?>
 		<?php endwhile; // end of the loop. ?>
 
-</div>
 
-<div class="wrapper">
-	<div class="text">
 		<h2>Education</h2>
 <ul>
 <?php

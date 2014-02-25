@@ -282,7 +282,7 @@ article {
 	font-weight: normal;
 	letter-spacing: normal;
 	line-height: 33px;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 	margin-top: 0px;
 	text-rendering: optimizelegibility;
 	visibility: visible;
@@ -290,7 +290,7 @@ article {
 	text-align:justify;
 	text-justify:inter-word;
 
-	
+
 	width:33.333%;
 	outline: 1px solid rgb(232,232,232);	
 	box-sizing:border-box;
