@@ -42,7 +42,6 @@ body {
 	-webkit-text-size-adjust: 100%; 
 	margin:0px;
 	padding:0px;
-	font-family: 'Open Sans', 'Arial', sans-serif;
 }
 
 #logo {
@@ -70,7 +69,7 @@ body {
 	position:absolute;
 	bottom: 24px;
 	color: #E6E6E6;
-	font-size: 32px;
+	font-size: 36px;
 	line-height: 42px;
 	letter-spacing: 0px;
 	font-weight: 300;

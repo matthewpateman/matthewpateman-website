@@ -15,13 +15,14 @@
 
 get_header(); ?>
 
+	<div id="content">
 <div class="wrapper first">
 
-	<div class="text">
+
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'content', 'page' ); ?>
 		<?php endwhile; // end of the loop. ?>
-	</div><!-- .text -->
+
 </div>
 
 <div class="wrapper">
@@ -58,8 +59,9 @@ wp_reset_query();  // Restore global post data stomped by the_post().
 <a href="http://linkedin.com/in/matthewpateman" />connect with me on LinkedIn</a>.
 </p>
 
-			</div><!-- .text -->
+
 
 </div><!-- .wrapper -->
-
+			</div><!-- .text -->
+		</div>
 <?php get_footer(); ?>
