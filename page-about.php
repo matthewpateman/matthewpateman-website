@@ -24,7 +24,7 @@ get_header(); ?>
 		<?php endwhile; // end of the loop. ?>
 
 
-		<h2>Education</h2>
+		<h1>Education</h1>
 <ul>
 <?php
 $args=array(
@@ -51,7 +51,7 @@ if( $my_query->have_posts() ) {
 wp_reset_query();  // Restore global post data stomped by the_post().
 ?>
 </ul>
-<h2>Curriculum Vitae</h2>
+<h1>Curriculum Vitae</h1>
 <p><a href="cv">View my CV</a> or<br />
 <a href="http://linkedin.com/in/matthewpateman" />connect with me on LinkedIn</a>.
 </p>

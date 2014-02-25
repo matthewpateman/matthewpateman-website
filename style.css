@@ -83,7 +83,7 @@ a img {border: 0;}
 	font-size: 32px;
 	line-height: 42px;
 	letter-spacing: 0px;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 .large, h2 {
@@ -105,10 +105,21 @@ a img {border: 0;}
 }
 
 body {
-	font-size: 15px;
+	color:#666;
+	-webkit-font-smoothing: antialiased;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	line-height: 21px;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	line-height: 30px;
+	margin-bottom: 30px;
+	margin-top: 0px;
+	text-rendering: optimizelegibility;
+	visibility: visible;
+	word-wrap: break-word;
+	text-align:justify;
+	text-justify:inter-word;
 }
 
 a, a:visited , a:link {
@@ -132,6 +143,8 @@ p {margin:5px 0px 10px 0px;}
 ul
 {
 padding-left:36px;
+-webkit-margin-before:5px;
+-webkit-margin-after:10px;
 }
 
 *{
@@ -166,6 +179,7 @@ body {
 		margin:0 auto;
 		padding:0px 20px;
 		box-sizing: border-box;
+		position: relative;
 	}
 
 #content .wrapper
@@ -240,12 +254,12 @@ nav ul {
 #content {
 	color:#666;
 	-webkit-font-smoothing: antialiased;
-	font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
-	font-size: 22px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
 	font-style: normal;
 	font-weight: normal;
 	letter-spacing: normal;
-	line-height: 33px;
+	line-height: 30px;
 	margin-bottom: 30px;
 	margin-top: 0px;
 	text-rendering: optimizelegibility;
@@ -255,57 +269,22 @@ nav ul {
 	text-justify:inter-word;
 }
 
-#content h2 {
-	color:#0093CB;
-	-webkit-font-smoothing: antialiased;
-	font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
-	font-size: 26px;
-	font-style: normal;
-	font-weight: normal;
-	letter-spacing: normal;
-	line-height: 33px;
-	margin-top: 20px;
-	text-rendering: optimizelegibility;
-	visibility: visible;
-	word-wrap: break-word;
-	text-align:justify;
-	text-justify:inter-word;
-}
-
 article {
 
-		color:#666;
+	color:#666;
 	-webkit-font-smoothing: antialiased;
-	font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
-	font-size: 22px;
-	font-style: normal;
-	font-weight: normal;
-	letter-spacing: normal;
-	line-height: 33px;
-	margin-bottom: 0px;
-	margin-top: 0px;
-	text-rendering: optimizelegibility;
-	visibility: visible;
-	word-wrap: break-word;
-	text-align:justify;
-	text-justify:inter-word;
-
+	text-align: left;
 
 	width:33.333%;
 	outline: 1px solid rgb(232,232,232);	
 	box-sizing:border-box;
 	float:left;
-	font-weight: 300;
 	background-color: #FFF;
-	box-sizing: border-box;
-	padding: 36px;
-	height: 500px;
+	padding: 20px;
+	height: 400px;
 	position: relative;
-	font-size: 15px;
-	
-	font-weight: 300;
-	line-height: 21px;
-}
+
+	}
 
 article img {width:100%; position: relative; height: auto;}
 
@@ -327,21 +306,9 @@ article .title {
 
 article .text {
 
-	
-	margin:0;
 	clear: both;
-	font-weight: 300;
-	line-height: 1.6;
-	height:141px;
-		font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
-	overflow: hidden;
 	text-overflow: ellipsis;
 
-}
-
-article .page-type{
-	
-	height:171px !important;
 }
 
 article footer {
@@ -545,6 +512,10 @@ px      68    160    252    */
 
 	#content {
 			text-align:left;
+			-webkit-font-smoothing: antialiased;
+			font-size: 18px;
+			line-height: 28px;
+
 	}
 	#content .wrapper {
 		padding: 30px 20px;
@@ -563,7 +534,7 @@ px      68    160    252    */
 	nav {position:absolute; top:51px; width: 100%; z-index: 600; left:0px;}
 	nav ul {margin: 0px; padding: 0px; list-style: none;}
 	nav ul li{height: 44px; border-bottom: 1px solid #DCDCDC; box-sizing:border-box; font-size: 14px; background: #FFF; font-weight: 600; width: 100%; padding: 0;}
-	nav ul li a {display:block; width:100%; margin:0 auto; padding:10px 20px; box-sizing:border-box;}
+	nav ul li a {display:block; width:100%; margin:0 auto; padding:10px 20px; box-sizing:border-box; line-height: 24px;}
 
 	nav ul li span {display: block;}
 
@@ -607,7 +578,7 @@ px      68    160    252    */
 
 	article {
 	width:100%;
-	height:500px;
+
 }
 
 	article header {
@@ -617,14 +588,9 @@ px      68    160    252    */
 	}
 
 	article .title {
-
 	}
 
 	article .text {
-		height:74px;
-
-		overflow: hidden;
-		text-overflow: ellipsis;
 
 	}
 

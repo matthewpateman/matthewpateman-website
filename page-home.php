@@ -21,12 +21,6 @@ get_header(); ?>
 
 <p>I have a background in product design and web development. You can find a selection of my past projects here. To find out more click on any of my linked networks and feel free to tweet me <a href="https://twitter.com/intent/tweet?screen_name=matthewpateman">@matthewpateman</a>.</p>
 
-</div>
-
-
-
-
-<div class="plain-text wrapper">
 	<h1>Projects</h1>
 		<p><a href="projects">Here are a selection of my projects</a></p>
 </div>

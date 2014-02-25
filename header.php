@@ -64,6 +64,10 @@ body {
 	height:200px;
 	}
 
+#image .wrapper {
+	height: 100%;
+}
+
 #image span {
 
 	position:absolute;
@@ -106,6 +110,7 @@ body {
 		font-size: 12px;
 		background-image: url('data:image/svg+xml;utf8,<svg%20width="30px"%20height="30px"%20xmlns="http://www.w3.org/2000/svg"><polygon%20fill="#6D747A"%20points="9,11%2021,11%2015,18.201%20"/></svg>');
 		background-position: right center;
+		line-height: 20px;
 		background-repeat: no-repeat;
 	}
 
