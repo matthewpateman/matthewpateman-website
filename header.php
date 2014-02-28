@@ -45,7 +45,7 @@ body {
 }
 
 #logo {
-	margin: 10px 10px 10px 0px;
+	margin: 10px 10px 9px 0px;
 	float: left;
 }
 
@@ -73,7 +73,7 @@ body {
 	position:absolute;
 	bottom: 24px;
 	color: #E6E6E6;
-	font-size: 36px;
+	font-size: 45px;
 	line-height: 42px;
 	letter-spacing: 0px;
 	font-weight: 300;
@@ -82,7 +82,7 @@ body {
 @media all and (min-width: 481px) {
 
 	header {
-		height: 70px;
+		height: 69px;
 	}
 
 	#logo {
@@ -138,6 +138,8 @@ window.onresize=function(){
 };
 
 </script>
+
+
 <?php 
 
 	// META DATA
