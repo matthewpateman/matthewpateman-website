@@ -35,6 +35,13 @@
   			$("#grey").toggleClass('hidden');
   			$("#bodywrapper").toggleClass('noscroll'); 
 		});		
+
+		$("#grey").click(function() {
+  			$("nav").toggleClass('hidden');
+  			$("#grey").toggleClass('hidden');
+  			$("#bodywrapper").toggleClass('noscroll'); 
+		});	
+
  	});
 </script>
 	 <?php wp_footer(); ?>
