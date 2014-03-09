@@ -27,6 +27,6 @@
 			</a>
 			<footer>
 				<div class="date"><?php the_date(); ?></div>
-				<?php // <div class="tags"><?php the_tags( '<ul><li>', '</li><li>', '</li></ul>' ); ?> </div> ?>
+				<?php // <div class="tags"><?php the_tags( '<ul><li>', '</li><li>', '</li></ul>' );  </div> ?>
 			</footer>
 		</article>
