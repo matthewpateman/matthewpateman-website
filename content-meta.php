@@ -9,15 +9,15 @@
 
 	// Set Page Description
 
-	if (is_page('Home') ) { 
-		$myExcerpt = get_bloginfo('description'); 
+	if (is_page('Home') ) {
+		$myExcerpt = get_bloginfo('description');
 	} else {
 		$myExcerpt = get_the_excerpt();
 		$tags = array("<p>", "</p>");
-		$myExcerpt = str_replace($tags, "", $myExcerpt);  
+		$myExcerpt = str_replace($tags, "", $myExcerpt);
 	}
 
-	// Viewport and Charset Meta 
+	// Viewport and Charset Meta
 
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -47,7 +47,7 @@
 
 	// Facebook Open Graph
 
-	if (is_page('Home') ) { 
+	if (is_page('Home') ) {
 		$title = get_bloginfo('name');
 	} else {
 		$title = get_the_title();
@@ -59,15 +59,38 @@
 <meta property="og:type"			content="website" />
 <meta property="og:url"				content="<?php the_permalink() ?>" />
 <meta property="og:site_name"		content="Matthew Pateman" />
-<?php 
+<?php
 
 	// Set the thumbnail image
 
-	if (is_page('Home') || is_page('Projects')) { 
+	if (is_page('Home') || is_page('Projects')) {
 		$src = get_stylesheet_directory_uri() . '/icon.png';
 	} else {
 		$content = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(320,240), false, '' );
 		$src = $content[0];
 	}
+
+  list($width, $height, $type, $attr) = getimagesize($src);
+
+  switch ($type) {
+    case 1:
+        $mime = "image/gif";
+        break;
+    case 2:
+        $mime = "image/jpg";
+        break;
+    case 3:
+        $mime = "image/png";
+        break;
+    default:
+      $mime = "";
+  }
+
+
+
+
 ?>
 <meta property="og:image" content="<?php echo $src;?>" />
+<meta property="og:image:type" content="<?php echo $mime;?>" />
+<meta property="og:image:width" content="<?php echo $width;?>" />
+<meta property="og:image:height" content="<?php echo $height;?>" />

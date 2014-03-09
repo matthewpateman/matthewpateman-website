@@ -39,7 +39,7 @@ header {
 body {
 	background: #F8F8F8;
 	color: #6D747A;
-	-webkit-text-size-adjust: 100%; 
+	-webkit-text-size-adjust: 100%;
 	margin:0px;
 	padding:0px;
 }
@@ -89,7 +89,7 @@ body {
 		width: 80px;
 		height: 50px;
 	}
-	
+
 
 	#menu {display: none;}
 
@@ -116,9 +116,22 @@ body {
 
 	.icon {display: none;}
 
-	#grey {width: 100%; height:100%; background:rgba(0,0,0,0.5); position: absolute; z-index:200; top:0;}
-	
-	.noscroll {overflow: hidden; position: absolute; top:0; width:100%; height: 100%;}
+	#grey {
+    width: 100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    position: absolute;
+    z-index:200;
+    top:0;
+  }
+
+	.noscroll {
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    width:100%;
+    height: 100%;
+  }
 
 }
 
@@ -140,11 +153,11 @@ window.onresize=function(){
 </script>
 
 
-<?php 
+<?php
 
 	// META DATA
 	get_template_part( 'content', 'meta' );
- 
+
 	// Google Analytics
 	get_template_part( 'content', 'analytics' );
 ?>
@@ -201,14 +214,14 @@ window.onresize=function(){
 </nav>
 <div id="grey" class="hidden"></div>
 
-		<?php 
+		<?php
 
 		if (is_home() )
 		{
 			$args=array(
 			'post_type' => 'page',
 			'p' => '7'
-  
+
 );
 $my_query = null;
 $my_query = $query = new WP_Query( $args );
@@ -222,13 +235,13 @@ $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(320,
 }
 wp_reset_query();  // Restore global post data stomped by the_post().
 
-			
-		} else { 
+
+		} else {
 			//Get the Thumbnail URL
 			$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(320,240), false, '' );
 
 		}
-			if ($src) { 
+			if ($src) {
 		?>
 
 <div id="image" style="
