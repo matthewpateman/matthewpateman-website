@@ -186,6 +186,10 @@ body {
 		position: relative;
 	}
 
+#bodywrapper {
+	padding-top: 90px;
+}
+
 #content .wrapper
 	{
 		padding:30px 20px;

@@ -1,0 +1,475 @@
+body {
+  background: #111;
+  font-weight: 300;
+}
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  text-rendering: optimizeLegibility;
+}
+
+.sectionWrapper {
+  display: none;
+}
+
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid rgba(255,255,255,.5);
+  color: rgba(255,255,255,.8);
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  z-index: 5000;
+}
+
+.button:hover, .button:focus{
+  color: #fff;
+  border-color: #fff;
+}
+
+
+/* 1. Intro Keyframe
+--------------------------------------- */
+#intro {
+  position: fixed;
+  top: 48%;
+  left: 10%;
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.name {
+  font-size: 35px;
+  letter-spacing: 10px;
+  line-height: 40px;
+  font-weight: 600;
+}
+.byline { 
+  font-size: 20px;
+  letter-spacing: 4px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+}
+.byline2 { 
+  font-size: 15px;
+  letter-spacing: 4px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.ampersand {
+  font-family: "Adobe Caslon Pro", "brandon-grotesque";
+  font-style: italic;
+}
+
+/* 2. projects/Images/Links Structure and Text
+--------------------------------------- */
+#skills {
+  position: fixed;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.skills-title {
+  position: fixed;
+  top: 30%;
+  left: 10%;
+  opacity: 0;
+}
+
+
+.skills-byline {
+  position: fixed;
+  top: calc(30% + 60px);
+  left: 10%;
+  color: white;
+  max-width: 22%;
+  opacity: 0;
+}
+
+.skills-button {
+  position: fixed;
+  top: calc(30% + 300px);
+  left: 10%;
+  opacity: 1;
+
+}
+
+#skillsList {
+  position: fixed;
+  width: 500px;
+  top: calc(30%);
+  right: 15%;
+  opacity: 1;
+}
+.skillsItem {
+  position: absolute;
+  overflow: hidden;
+  width: 500px;
+  height: 40px;
+    font-size: 20px;
+  letter-spacing: 4px;
+  line-height: 36px;
+  text-align: left;
+  font-weight: 400;
+  opacity: 0;
+}
+.skill-1  { top: 0px;   left: 0;  }
+.skill-2  { top: 45px;   left: 0;  }
+.skill-3  { top: 90px;   left: 0;  }
+.skill-4  { top: 135px;   left: 0;  }
+.skill-5  { top: 180px;   left: 0;  }
+.skill-6  { top: 225px;   left: 0;  }
+.skill-7  { top: 270px;   left: 0;  }
+.skill-8  { top: 315px;   left: 0;  }
+.skill-9  { top: 360px;   left: 0;  }
+.skill-10  { top: 405px;   left: 0;  }
+
+.skillsItem .bar {
+  display: block;
+  width:100%;
+  height: 4px;
+  background: rgba(0, 147, 203, 1);
+}
+
+.skillsItem .scale50 {
+  width:50%;
+}
+.skillsItem .scale60 {
+  width:60%;
+}
+.skillsItem .scale70 {
+  width:70%;
+}
+.skillsItem .scale80 {
+  width:80%;
+}
+.skillsItem .scale90 {
+  width:90%;
+}
+.skillsItem .scale100 {
+  width:100%;
+}
+
+
+.projects-title {
+  position: fixed;
+  top: 30%;
+  left: 10%;
+  opacity: 0;
+}
+
+
+.projects-byline,
+.images-byline {
+  position: fixed;
+  top: calc(30% + 60px);
+  left: 10%;
+  color: white;
+  max-width: 22%;
+  opacity: 0;
+}
+.images-byline-2 {
+  text-align: center;
+  position: fixed;
+  top: 93%;
+  left: 25%;
+  color: white;
+  width: 50%;
+  opacity: 0;
+}
+
+.projects-button {
+  position: fixed;
+  top: calc(30% + 300px);
+  left: 10%;
+  opacity: 1;
+
+}
+
+#testing {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  position: fixed;
+  top: 48%;
+  left: 25%;
+  color: white;
+  width: 50%;
+  opacity: 0;
+}
+
+#testing .sectionBackground {
+  position: fixed;
+  height: 150%;
+  width: 100%;
+  background-color: red;
+  opacity: 0;
+}
+/* 3. projects Keyframe
+--------------------------------------- */
+#domprojectsList {
+  position: fixed;
+  width: 420px;
+  top: 100%;
+  right: 15%;
+  opacity: 0;
+}
+.dom-projects-item {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+}
+
+.dei-1  { top: 0;     left: 0;      background: url('images/project1.png'); background-size: cover; }
+.dei-3  { top: 0;     left: 220px;  background: url('images/project2.png'); background-size: cover; }
+.dei-9  { top: 220px; left: 0;      background: url('images/project3.png'); background-size: cover; }
+.dei-11 { top: 220px; left: 220px;  background: url('images/project4.png'); background-size: cover; }
+
+
+/* 3. Images Keyframe
+--------------------------------------- */
+.raw-page {
+  position: fixed;
+  width: 45%;
+  border-radius: 6px;
+  box-shadow: inset 0 0 1px rgba(255,255,255,.3);
+  border: 1px solid rgba(0,0,0,.2);
+  background-clip: padding-box;
+}
+#mediumHomepage {
+  top: 100%;
+  right: 5%;
+}
+.iphone {
+  position: fixed;
+  right: 40%;
+  top: 102%;
+  width: 16%;
+}
+.iphone-frame {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+  z-index: 2;
+}
+.iphone-viewport {
+  width: 83.5%;
+  height: 69.5%;
+  position: absolute;
+  top: 14%; 
+  left: 8%;
+  overflow: hidden;
+  background-color: #000;
+}
+.iphone-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#medium-profile-iphone {
+  z-index: 2;
+}
+
+#experience, #education {
+  position: fixed;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.experience-title, .education-title {
+  position: fixed;
+  top: 30%;
+  left: 10%;
+  opacity: 0;
+}
+
+
+.experience-byline, .education-byline {
+  position: fixed;
+  top: calc(30% + 60px);
+  left: 10%;
+  color: white;
+  max-width: 22%;
+  opacity: 0;
+}
+
+.experience-button, .education-button {
+  position: fixed;
+  top: calc(30% + 300px);
+  left: 10%;
+  opacity: 1;
+
+}
+
+.experience-line, .education-line {
+  position: fixed;
+  top: 30%;
+  right: calc(15% + 380px);
+  width: 1px;
+  height: 500px;
+  background: white;
+}
+
+.experience-line {
+  opacity: 0;
+}
+
+#experienceList, #educationList {
+  position: fixed;
+  width: 500px;
+  top: calc(30%);
+  right: 15%;
+  opacity: 1;
+}
+.experienceItem, .educationItem {
+  position: absolute;
+  overflow: hidden;
+  width: 500px;
+  height: 60px;
+    font-size: 20px;
+  letter-spacing: 4px;
+  line-height: 36px;
+  text-align: left;
+  font-weight: 400;
+  opacity: 0;
+}
+
+.experienceItem .time, .educationItem .time {
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 39px;
+  top:10px;
+  left: 0;
+  line-height: 13px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+.experienceItem .dot, .educationItem .dot{
+  display: block;
+  position: absolute;
+  top:0px;
+  left: 100px;
+  width:40px;
+  height: 60px;
+  background: url('images/dot.svg') no-repeat;
+}
+
+.experienceItem .work, .educationItem .course {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 140px;
+  width: 360px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+
+.detail {
+  position: absolute;
+  left: 740px;
+  width: 360px;
+  height: auto;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: normal;
+  font-size: 14px;
+}
+
+.detail span {
+  font-weight: 900;
+}
+
+.detail li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+
+.detail li:before {
+    content: "• ";
+    color: rgba(0, 147, 203, 1);
+}
+
+.detail-1 {
+  top:60px;
+}
+
+.detail-2 {
+  top:120px;
+}
+
+.detail-3 {
+  top:180px;
+}
+
+.detail-4 {
+  top:240px;
+}
+
+.detail-5 {
+  top:300px;
+}
+
+/* 3. Links Keyframe
+--------------------------------------- */
+#connect {
+  position: fixed;
+  top: 48%;
+  left: 10%;
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  display: none;
+}
+.connect-byline {
+padding-bottom: 20px;
+}
+
+/* 4. Handling resize and small devices
+--------------------------------------- */
+.error {
+  display: none;
+  position: fixed;
+  width: 80%;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  top: 30%;
+  left: 10%;
+}
+.page-error .error {
+  display: block;
+}
+.page-error .container {
+  display: none;
+}
