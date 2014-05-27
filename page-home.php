@@ -15,11 +15,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Matthew Pateman</title>
-<meta name="description" content="Personal site of designer Matthew Pateman.">
-<meta name="author" content="Matthew Pateman">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><?php wp_title( '|', true, 'right' ); ?></title>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/base.css">
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/main.css">
@@ -33,7 +29,14 @@
 <style>
   .header { opacity: 0; }
 </style>
+<?php
 
+  // META DATA
+  get_template_part( 'content', 'meta' );
+
+  // Google Analytics
+  get_template_part( 'content', 'analytics' );
+?>
 </head>
 <body>
 <div class="container">
@@ -58,7 +61,7 @@
     <section id="skills" class="sectionWrapper">
       <h1 class="skills-title">Skills</h1>
       <p class="skills-byline">These are some of the things I am great at:</p>
-      <a class="skills-button button" href="http://www.matthewpateman.com/about/">Download CV</a>
+      <a class="skills-button button" href="http://www.matthewpateman.com/cv.pdf">Download CV</a>
       <ul id="skillsList">
         <li class="skillsItem skill-1">HTML &amp; CSS<span class="bar scale100"></span></li>
         <li class="skillsItem skill-2">JavaScript<span class="bar scale80"></span></li>
@@ -86,7 +89,7 @@
     <section id="experience" class="sectionWrapper">
       <h1 class="experience-title">Experience</h1>
       <p  class="experience-byline">This is what I am getting up to</p>
-      <a  class="experience-button button" href="http://www.matthewpateman.com/about/">Download CV</a>
+      <a  class="experience-button button" href="http://www.matthewpateman.com/cv.pdf">Download CV</a>
       <div class="experience-line"></div>
       <ul id="experienceList">
         <li class="experienceItem experience-1">
@@ -124,7 +127,7 @@
     <section id="education" class="sectionWrapper">
       <h1 class="education-title">Education</h1>
       <p  class="education-byline">This is what I am getting up to</p>
-      <a  class="education-button button" href="http://www.matthewpateman.com/about/">Download CV</a>
+      <a  class="education-button button" href="http://www.matthewpateman.com/cv.pdf">Download CV</a>
       <div class="education-line"></div>
       <ul id="educationList">
         <li class="educationItem education-1">
@@ -180,7 +183,7 @@
         <li class="educationItem education-5">
           <span class="time"><br/>2012<br/></span>
           <span class="dot"></span>
-          <span class="course">Backend Web Development</span>
+          <span class="course">Back-end Web Development</span>
         </li>
         <li class="educationItem detail detail-5">
           <span>General Assembly London</span>
