@@ -16,6 +16,8 @@
 <?php // get_template_part( 'content', 'share2' ); 
 
 } ?>
+<h1 class="title"><?php the_title() ?></h1>
+
 			<?php the_content(); ?>
 
 

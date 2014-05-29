@@ -16,19 +16,11 @@ get_header(); ?>
 
 <div class="wrapper">
 	<div id="content">
-		<div class="inner">
 
-
-			
-
-
-
-			<div class="text">
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>
 				<?php endwhile; // end of the loop. ?>
-			</div><!-- .text -->
-		</div><!-- .inner -->
+			
 	</div><!-- #content -->
 </div><!-- .wrapper -->
 

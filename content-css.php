@@ -24,17 +24,8 @@ header {
 
 .header .wrapper {display: block;}
 
-.wrapper
-	{
-		width:700px;
-		margin:0 auto;
-		padding:0px 20px;
-		box-sizing: border-box;
-		position: relative;
-	}
-
 #logo {
-	margin: 10px 10px 9px 0px;
+	margin: 20px 10px 19px 0px;
 	float: left;
 }
 
@@ -47,12 +38,21 @@ header {
 	fill:#6D747A;
 }
 
+.wrapper
+	{
+		width:1024px;
+		margin:0 auto;
+		padding:0px 20px;
+		box-sizing: border-box;
+		position: relative;
+	}
+
 .header {
-  position: fixed;
-  width:100%;
-height: 70px;
-background: rgba(255,255,255,0.75);
-z-index:4000;
+	position: fixed;
+	width:100%;
+	height: 90px;
+	background: rgba(245,245,245,0.75);
+	z-index:4000;
 }
 
 header nav {
@@ -85,7 +85,7 @@ header nav a{
 	nav {
 		position:absolute;
 		z-index: 600;
-		top:-60px;
+		top:-70px;
 		left:calc(50% - 300px);
 		width:600px;
 

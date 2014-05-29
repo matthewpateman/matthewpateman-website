@@ -80,12 +80,13 @@ a img {border: 0;}
 
 .huge, h1 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 40px;
-	line-height: 30px;
+	font-size: 45px;
+	line-height: 42px;
 	letter-spacing: 0px;
-	font-weight: 400;
+	font-weight: 300;
 	margin-top: 28px;
 	margin-bottom: 2px;
+
 }
 
 .large, h2 {
@@ -172,14 +173,16 @@ cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
 body {
-	background: #F0F0F0;
+	background: #FFF; /*#F0F0F0;*/
 	color: #6D747A;
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
 
+.title {margin-bottom: 40px;}
+
 .wrapper
 	{
-		width:700px;
+		width:1024px;
 		margin:0 auto;
 		padding:0px 20px;
 		box-sizing: border-box;
@@ -194,6 +197,8 @@ body {
 	{
 		padding:30px 20px;
 	}
+
+#content img {width: 100%; height: auto; margin-bottom: 20px;}
 
 
 .articles
