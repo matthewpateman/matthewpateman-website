@@ -84,7 +84,7 @@
     </section>
     <section id="experience" class="sectionWrapper">
       <h1 class="experience-title">Experience</h1>
-      <p  class="experience-byline">This is what I am getting up to</p>
+      <p  class="experience-byline">This is what I have been getting up to:</p>
       <a  class="experience-button button" href="http://www.matthewpateman.com/cv.pdf">Download CV</a>
       <div class="experience-line"></div>
       <ul id="experienceList">
@@ -122,7 +122,7 @@
     </section>
     <section id="education" class="sectionWrapper">
       <h1 class="education-title">Education</h1>
-      <p  class="education-byline">This is what I am getting up to</p>
+      <p  class="education-byline">Here is a brief summary of my education:</p>
       <a  class="education-button button" href="http://www.matthewpateman.com/cv.pdf">Download CV</a>
       <div class="education-line"></div>
       <ul id="educationList">
