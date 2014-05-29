@@ -54,10 +54,6 @@
       <h2 class="byline">Designer &amp; Developer</h2>
       <h2 class="byline2">Digital Products &amp; User Experiences</h2>
     </section>
-<!--     <section id="testing">
-      <div class="sectionBackground"></div>
-      <h1 class="title">Testing</h1>
-    </section> -->
     <section id="skills" class="sectionWrapper">
       <h1 class="skills-title">Skills</h1>
       <p class="skills-byline">These are some of the things I am great at:</p>
@@ -79,7 +75,7 @@
       <h1 class="projects-title">Portfolio</h1>
       <p class="projects-byline">Here's are some of my projects:</p>
       <a class="projects-button button" href="http://www.matthewpateman.com/projects">View portfolio</a>
-      <ul id="domprojectsList">
+      <ul id="projectsList">
         <li class="dom-projects-item dei-1"></li>
         <li class="dom-projects-item dei-3"></li>
         <li class="dom-projects-item dei-9"></li>

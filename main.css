@@ -38,7 +38,7 @@ body {
 }
 
 
-/* 1. Intro Keyframe
+/* 1. Intro
 --------------------------------------- */
 #intro {
   position: fixed;
@@ -75,7 +75,7 @@ body {
   font-style: italic;
 }
 
-/* 2. projects/Images/Links Structure and Text
+/* 2. Skills
 --------------------------------------- */
 #skills {
   position: fixed;
@@ -86,7 +86,7 @@ body {
 
 .skills-title {
   position: fixed;
-  top: 30%;
+  top: 25%;
   left: 10%;
   opacity: 0;
 }
@@ -94,7 +94,7 @@ body {
 
 .skills-byline {
   position: fixed;
-  top: calc(30% + 60px);
+  top: calc(25% + 60px);
   left: 10%;
   color: white;
   max-width: 22%;
@@ -103,7 +103,7 @@ body {
 
 .skills-button {
   position: fixed;
-  top: calc(30% + 300px);
+  top: calc(25% + 300px);
   left: 10%;
   opacity: 1;
 
@@ -112,7 +112,7 @@ body {
 #skillsList {
   position: fixed;
   width: 500px;
-  top: calc(30%);
+  top: 25%;
   right: 15%;
   opacity: 1;
 }
@@ -165,71 +165,37 @@ body {
   width:100%;
 }
 
-
+/* 3. Projects
+--------------------------------------- */
 .projects-title {
   position: fixed;
-  top: 30%;
+  top: 25%;
   left: 10%;
   opacity: 0;
 }
 
 
-.projects-byline,
-.images-byline {
+.projects-byline {
   position: fixed;
-  top: calc(30% + 60px);
+  top: calc(25% + 60px);
   left: 10%;
   color: white;
   max-width: 22%;
   opacity: 0;
 }
-.images-byline-2 {
-  text-align: center;
-  position: fixed;
-  top: 93%;
-  left: 25%;
-  color: white;
-  width: 50%;
-  opacity: 0;
-}
 
 .projects-button {
   position: fixed;
-  top: calc(30% + 300px);
+  top: calc(25% + 300px);
   left: 10%;
   opacity: 1;
 
 }
 
-#testing {
+#projectsList {
   position: fixed;
-  height: 100%;
-  width: 100%;
-}
-
-.title {
-  text-align: center;
-  position: fixed;
-  top: 48%;
-  left: 25%;
-  color: white;
-  width: 50%;
-  opacity: 0;
-}
-
-#testing .sectionBackground {
-  position: fixed;
-  height: 150%;
-  width: 100%;
-  background-color: red;
-  opacity: 0;
-}
-/* 3. projects Keyframe
---------------------------------------- */
-#domprojectsList {
-  position: fixed;
-  width: 420px;
-  top: 100%;
+  width: 500px;
+  top: 25%;
   right: 15%;
   opacity: 0;
 }
@@ -292,6 +258,9 @@ body {
   z-index: 2;
 }
 
+/* 4. Experience & 5. Education
+--------------------------------------- */
+
 #experience, #education {
   position: fixed;
   top: 100%;
@@ -301,7 +270,7 @@ body {
 
 .experience-title, .education-title {
   position: fixed;
-  top: 30%;
+  top: 25%;
   left: 10%;
   opacity: 0;
 }
@@ -309,7 +278,7 @@ body {
 
 .experience-byline, .education-byline {
   position: fixed;
-  top: calc(30% + 60px);
+  top: calc(25% + 60px);
   left: 10%;
   color: white;
   max-width: 22%;
@@ -318,7 +287,7 @@ body {
 
 .experience-button, .education-button {
   position: fixed;
-  top: calc(30% + 300px);
+  top: calc(25% + 300px);
   left: 10%;
   opacity: 1;
 
@@ -326,7 +295,7 @@ body {
 
 .experience-line, .education-line {
   position: fixed;
-  top: 30%;
+  top: 25%;
   right: calc(15% + 380px);
   width: 1px;
   height: 500px;
@@ -340,7 +309,7 @@ body {
 #experienceList, #educationList {
   position: fixed;
   width: 500px;
-  top: calc(30%);
+  top: 25%;
   right: 15%;
   opacity: 1;
 }
@@ -439,7 +408,7 @@ body {
   top:300px;
 }
 
-/* 3. Links Keyframe
+/* 6. Connect
 --------------------------------------- */
 #connect {
   position: fixed;

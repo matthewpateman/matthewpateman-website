@@ -191,8 +191,8 @@
                 'translateY'  : [100, 0],
                 'opacity'     : [0, 1.75] // hack to accelrate opacity speed
               } , {
-                'selector'    : '#domprojectsList',
-                'translateY'  : '-70%',
+                'selector'    : '#projectsList',
+                'translateY'  : ['70%', '0%'],
                 'opacity'     : [0, 1] // hack to accelrate opacity speed
               } , {
                 'selector'    : '.projects-button',
