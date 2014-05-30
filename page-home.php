@@ -74,7 +74,7 @@
     <section id="projects" class="sectionWrapper">
       <h1 class="projects-title">Portfolio</h1>
       <p class="projects-byline">Here's are some of my projects:</p>
-      <a class="projects-button button" href="http://www.matthewpateman.com/projects">View portfolio</a>
+      <a class="projects-button button" href="http://www.matthewpateman.com/portfolio">View portfolio</a>
       <ul id="projectsList">
         <li class="dom-projects-item dei-1"></li>
         <li class="dom-projects-item dei-3"></li>
