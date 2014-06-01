@@ -9,6 +9,7 @@
 ?>
 <?php /*<a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>"> */ ?>
 		<article>
+			<a href="<?php the_permalink(); ?>">
 				
 
 <?php 
@@ -22,5 +23,6 @@
 			<?php } ?>
 				<div class="title"><?php the_title(); ?></div>
 				<div class="text page-type"><?php the_excerpt(); ?></div>
+			</a>
 	</article>			
 	<?php //</a> ?>

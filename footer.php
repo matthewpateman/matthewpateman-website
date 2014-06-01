@@ -26,24 +26,7 @@
 	</footer>
 
 </div><!-- #bodywrapper -->
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script>
-	$(document).ready(
-		function() {
-		$("#menu").click(function() {
-  			$("nav").toggleClass('hidden');
-  			$("#grey").toggleClass('hidden');
-  			$("#bodywrapper").toggleClass('noscroll'); 
-		});		
 
-		$("#grey").click(function() {
-  			$("nav").toggleClass('hidden');
-  			$("#grey").toggleClass('hidden');
-  			$("#bodywrapper").toggleClass('noscroll'); 
-		});	
-
- 	});
-</script>
 	 <?php wp_footer(); ?>
 </body>
 </html>

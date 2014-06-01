@@ -48,10 +48,30 @@
 </svg>
 </div>
 
+<div id="menubutton"></div>
 
-<nav>
+<nav class="hidden">
 <?php wp_nav_menu( array('depth' => 1 ) ); ?>
 </nav>
 
 </div>
 </header>
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script>
+	$(document).ready(
+		function() {
+		$("#menubutton").click(function() {
+  			$("nav").toggleClass('hidden');
+  			// $("#grey").toggleClass('hidden');
+  			// $("#bodywrapper").toggleClass('noscroll'); 
+		});		
+
+		// $("#grey").click(function() {
+  // 			$("nav").toggleClass('hidden');
+  // 			$("#grey").toggleClass('hidden');
+  // 			$("#bodywrapper").toggleClass('noscroll'); 
+		// });	
+
+ 	});
+</script>

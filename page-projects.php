@@ -23,7 +23,7 @@ $args=array(
   
 	'post_type' => 'page',
 	'post_parent' => 6,
-	'posts_per_page' => 0,
+	'posts_per_page' => -1,
 	'sort_order' => 'desc'  
 
   
