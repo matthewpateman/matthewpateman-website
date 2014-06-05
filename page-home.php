@@ -73,7 +73,7 @@
     </section>
     <section id="projects" class="sectionWrapper">
       <h1 class="projects-title">Portfolio</h1>
-      <p class="projects-byline">Here's are some of my projects:</p>
+      <p class="projects-byline">Here are some of my projects:</p>
       <a class="projects-button button" href="http://www.matthewpateman.com/portfolio">View portfolio</a>
       <ul id="projectsList">
         <li class="dom-projects-item dei-1"></li>
@@ -89,33 +89,44 @@
       <div class="experience-line"></div>
       <ul id="experienceList">
         <li class="experienceItem experience-1">
-          <span class="time">July 2010<br/>-<br/>Present</span>
+          <span class="time">August 2011<br/>-<br/>Present</span>
           <span class="dot"></span>
           <span class="work">American Express</span>
         </li>
         <li class="experienceItem detail detail-1">
-          <span>Senior Designer &amp; Manager for Marketing Communications</span>
+          <span>Designer &amp; Manager for Marketing Communications</span>
+          <p>After a successful contractor role I was offered a more senior designer and managerial position, overseeing marketing and communications strategies, and managing a designer and a communications specialist based in London and Singapore. The team’s main focus is on digital marketing and communications.</p>
           <ul>
-            <li>Led muti-market marketing and communications strategies, plans and platforms for international activities in marketings incl. Canada, Singapore, Hong Kong, Nordics, UK and Australia / New Zealand</li>
-            <li>Managed internal brand strategy and evolution for key initiatives incl. developments and cultural adjustments and adaptation based on consumer insights</li>
-            <li>Led a communications and design team based in London and Singapore</li>
-            <li>Collaborated with international agencies and internal partners to develop campaign creatives</li>
-            <li>Ensured unified aesthetic and consistent content quality across all markets and channels</li>
-            <li>Managed internal stakeholders and project partners involved in programme launches</li>
+            <li>Managed the internal brand strategy and evolution of key initiatives. This involved continuous development of the brand platform and adjustments to it according to different cultural requirements and consumer insights.</li>
+            <li>Collaborated with international agencies and internal partners to develop marketing materials.</li>
+            <li>Developed 360 marketing campaigns, including microsites based on both HTML5/CSS3 and Flash with AS3.</li>
+            <li>Ensured a unified aesthetic and consistent content quality across all markets and channels.</li>
+            <li>Communicated the intentions behind design choices and worked closely with internal and external teams in order to help achieve business needs.</li>
           </ul>
         </li>
         <li class="experienceItem experience-2">
+          <span class="time">July 2010<br/>-<br/>August 2011</span>
+          <span class="dot"></span>
+          <span class="work">American Express</span>
+        </li>
+        <li class="experienceItem detail detail-2">
+          <span>Junior Communications Designer</span>
+          <p>I joined American Express as a contractor to support with international product launches in Singapore, Hong Kong and Argentina. My role was to design advertising and marketing materials. The launches saw a revised and updated visual identity based on the existing US brand platform. In this role the focus was to grow digital communications to facilitate further international launches.</p>
+        </li>
+        <li class="experienceItem experience-3">
           <span class="time">June 2009<br/>-<br/>March 2011</span>
           <span class="dot"></span>
           <span class="work">Design Against Crime</span>
         </li>
-        <li class="experienceItem detail detail-2">
+        <li class="experienceItem detail detail-3">
           <span>Web Designer / Developer &amp; Design Consultant</span>
             <ul>
-              <li>Developed the relaunch of the research centre’s website with a focus on UX, Social integration, SEO, CMS and an enhanced mobile experience</li>
-              <li>Led the social strategy using Facebook, Twitter, Foursquare and MailChimp and developed Social Apps for the Facebook platform</li>
-              <li>Collaborated in design and user research for multiple brands including French luxury group LVMH</li>
-              <li>Led the design and development of an interactive web-app for Camden Council</li>
+              <li>Developed the relaunch of the research centre’s website with a focus on user experience and interaction.</li>
+              <li>Together with an additional graphic designer the site was rebuilt using Wordpress, including improving search though better SEO and an enhanced mobile and tablet experience.</li>
+              <li>Conducted user testing to ensure the content on the site was meeting target audience’s needs.</li>
+              <li>Developed the research centre’s social strategy on Facebook and Twitter.</li>
+              <li>Collaborated in design- and user-research for multiple brands including French luxury group LVMH.</li>
+              <li>Led the design and development of an interactive web-app for Camden Council. Encouraged the incorporation of a responsive site making it more compatible for future devices.</li>
           </ul>
         </li>
       </ul>
@@ -133,10 +144,10 @@
         </li>
         <li class="educationItem detail detail-1"><span>University of Westminster</br>MSc completed with distinction</span>
           <ul>
-            <li>Final thesis was the user experience of native versus web-app on the iPhone</li>
-            <li>Developing a case study prototype app for the British Museum.</li>
-            <li>Core focus of this course was user experience, user interface design and social media. Attended ‘Future of Web Design’ in London to grow knowledge of trends in the mobile and web space.</li>
-            <li>Designed a conceptual store guide app for Selfridges based on Apple’s iOS design guidelines.</li>
+            <li>My final thesis compared the user experience of native versus web apps on mobile devices, which led to the development of a case study prototype app for the British Museum.</li>
+            <li>The core focus of this course was user experience, user interface design and human-computer interactions.</li> 
+            <li>Attended industry events to grow knowledge of trends in the mobile and web and UX field.</li>
+            <li>Designed a conceptual store guide app for Selfridges based on mobile HCI best practices.</li>
             <li>Developed an understanding of the agile development process.</li>
           </ul>
         </li>
@@ -147,11 +158,11 @@
         </li>
         <li class="educationItem detail detail-2"><span>Central Saint Martins College of Art and Design, University of the Arts London<br/>Upper second-class degree</span>
           <ul>
-            <li>Final project was on preventing product fraud and theft by adding a digital compontent to physical products through integration of RFID and NFC technology (today known as “internet of things”).</li>
-            <li>Developed a working prototype which offered customisation opportunities for brands.</li>
+            <li>My final project was originally proposed to prevent product fraud and theft by adding a digital component to physical products. It expanded into a general enhancement of physical products by integrating digital components and touch-points.</li>
+            <li>Developed a working prototype of a web platform, which offered customisation opportunities for brands.</li>
             <li>Mastered the design process of a product or service from the initial concept through to the final product including preparation for industrial mass production.</li>
             <li>Worked with multiple brands including Coca Cola South Africa and a conceptual branding project for Audi.</li>
-            <li>Developed an understanding of the design development process and methodology.</li>
+            <li>Developed an understanding of design development processes and methodologies.</li>
           </ul>
         </li>
         <li class="educationItem education-3">

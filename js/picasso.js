@@ -349,6 +349,40 @@
             'wrapper' : '#experience',
             'duration' : '100%',
             'animations' :  [
+              {
+                'selector'    : '.experience-3',
+                'translateY'  : [180, 120],
+                'opacity'     : [0, 1] // hack to accelrate opacity speed
+              }
+            ]
+          } , {
+            'wrapper' : '#experience',
+            'duration' : '80%',
+            'animations' :  [
+                         {
+                'selector'    : '.detail-3',
+                'opacity'     : [0, 1.75], // hack to accelrate opacity speed
+                'translateX'  : [0, -600]
+              }
+            ]
+          } , {
+             'wrapper' : '#experience',
+            'duration' : '150%',
+            'animations' :  [ ]
+          } , {
+            'wrapper' : '#experience',
+            'duration' : '80%',
+            'animations' :  [
+              {
+                'selector'    : '.detail-3',
+                'opacity'     : [1, -1], // hack to accelrate opacity speed
+                'translateX'  : [-600, 0]
+              }
+            ]
+          } , {
+            'wrapper' : '#experience',
+            'duration' : '100%',
+            'animations' :  [
                          {
                 'selector'    : '.experience-title',
                 'translateY'  : [0, -110],
@@ -369,6 +403,10 @@
               } ,     {
                 'selector'    : '.experience-2',
                 'translateY'  : [60, 45],
+                'opacity'     : [1, 0] // hack to accelrate opacity speed
+              } ,     {
+                'selector'    : '.experience-3',
+                'translateY'  : [120, 110],
                 'opacity'     : [1, 0] // hack to accelrate opacity speed
               }
             ]

@@ -308,7 +308,7 @@ article {
 	}
 
 article:hover { 
-background: rgba(245,245,245,0.75);
+background: #F2F2F2;
 }
 
 article img {width:100%; position: relative; height: auto;}
