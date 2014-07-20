@@ -61,73 +61,50 @@ header #menubutton {
 }
 
 header nav {
-        position: relative;
-        display: -webkit-flex;
-        display: flex; /* or inline-flex */
-        
-        
-        -webkit-align-items: center;
-        align-items: center;
-
-        -webkit-justify-content: center;
-        -webkit-align-items: center;
-
-        width: 100%;
-        margin: 0 auto;
-        height: auto;
+    position: absolute;
+    top:0px;
+    text-align: center;
+    z-index: 600;
+    width: 100%;
 }
-      
+
+header nav ul {
+	position: relative;
+	display: block;
+	margin: 0px auto;
+	padding: 0px;
+	list-style: none;
+}
+
+
+nav ul li {
+	display: inline;
+	height: 40px;
+	padding: 0 20px;
+
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 90px;
+
+    cursor: pointer;	
+}
+
 header nav a{
-        flex-grow: 1;
-        padding: 0 10px;
-        font-size: 20px;
-        font-weight: 400;
-        text-decoration: none;
-        line-height: 70px;
-        cursor: pointer;
-      }
-
-	nav {
-		position:absolute;
-		z-index: 600;
-		top:-70px;
-		left:calc(50% - 300px);
-		width:600px;
-
-	}
-
-
-nav ul {
-		margin: 0px;
-		padding: 0px;
-		list-style: none;
-	}
-
-	nav ul li {
-		height: 40px;
-		padding: 0 10px;
-		box-sizing:border-box;
-		font-size: 20px;
-		font-weight: 400;
-		float:left;
-	}
-
-	nav ul li .icon {display: none;}
-	nav ul li span {display: block; float: left; padding:5px;}
+	text-decoration: none;
+}
 
 #image {
 	width:100%;
 	position: relative;
 	height:200px;
 	margin-top:-89px;
-	}
+}
 
 #image .wrapper {
 	height: 100%;
 }
 
 #image span {
-
 	position:absolute;
 	bottom: 24px;
 	color: #E6E6E6;

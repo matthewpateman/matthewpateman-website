@@ -10,11 +10,10 @@
  */
 ?>
 <header class="header">
-<div class="wrapper">
-
-<div id="logo">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="48px" height="30px" viewBox="0 0 48 30" enable-background="new 0 0 48 30" xml:space="preserve">
+	<div class="wrapper">
+		<div id="logo">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			width="48px" height="30px" viewBox="0 0 48 30" enable-background="new 0 0 48 30" xml:space="preserve">
 			<path  d="M14.878,20.705c0.195,1.86,0.359,3.212,0.493,4.055l0.832-0.201
 				C15.824,23.527,15.382,22.244,14.878,20.705z M9.94,22.213c-0.078-0.32-0.177-0.517-0.3-0.588
 				c-0.123-0.072-0.34-0.071-0.652,0.005l0.578,2.381c0.07-0.013,0.129-0.025,0.179-0.037c0.221-0.054,0.36-0.146,0.419-0.276
@@ -45,17 +44,17 @@
 				l0.401,1.65l-1.405,0.341l0.461,1.901l1.65-0.401l0.421,1.736L34.94,12.743z M14.961,14.317l0.768-0.186
 				c-0.349-0.954-0.757-2.141-1.223-3.558C14.683,12.288,14.835,13.536,14.961,14.317z M40.104,20.52l1.413,1.446l-0.542-1.658
 				L40.104,20.52z M39.176,14.805c0.195,1.86,0.359,3.212,0.493,4.055l0.831-0.202C40.121,17.627,39.68,16.343,39.176,14.805z"/>
-</svg>
+			</svg>
+		</div>
+		<div id="menubutton"></div>
 </div>
-
-<div id="menubutton"></div>
-
 <nav class="hidden">
 <?php wp_nav_menu( array('depth' => 1 ) ); ?>
 </nav>
-
-</div>
 </header>
+
+
+
 
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script>

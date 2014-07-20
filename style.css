@@ -214,33 +214,11 @@ box-shadow:0px 0px 5px rgba(0,0,0,0.2);
 		margin:10px auto;
 	}
 
-	nav {
-		position:absolute;
-		z-index: 600;
-		top:25px;
-		left:50%;
-
-	}
+	
 
 
-nav ul {
-		margin: -5px 0px 0px 0px;
-		padding: 0px;
-		list-style: none;
-		margin-left:-50%;
-	}
 
-	nav ul li {
-		height: 40px;
-		padding: 0 10px;
-		box-sizing:border-box;
-		font-size: 20px;
-		font-weight: 400;
-		float:left;
-	}
 
-	nav ul li .icon {display: none;}
-	nav ul li span {display: block; float: left; padding:5px;}
 
 .smallheader {background-color:#F00 !important;}
 
