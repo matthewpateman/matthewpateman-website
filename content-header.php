@@ -46,11 +46,15 @@
 				L40.104,20.52z M39.176,14.805c0.195,1.86,0.359,3.212,0.493,4.055l0.831-0.202C40.121,17.627,39.68,16.343,39.176,14.805z"/>
 			</svg>
 		</div>
-		<div id="menubutton"></div>
-</div>
-<nav class="hidden">
-<?php wp_nav_menu( array('depth' => 1 ) ); ?>
-</nav>
+		<div id="menubutton">
+    		<div id="button_top_line" class="button_line"></div>
+    		<div id="button_middle_line" class="button_line"></div>
+    		<div id="button_bottom_line" class="button_line"></div>
+		</div>
+	</div>
+	<nav class="hidden">
+		<?php wp_nav_menu( array('depth' => 1 ) ); ?>
+	</nav>
 </header>
 
 
@@ -62,6 +66,21 @@
 		function() {
 		$("#menubutton").click(function() {
   			$("nav").toggleClass('hidden');
+
+  			 if ($('#menubutton').hasClass('open')) {
+
+            $('#menubutton').addClass('closed').removeClass('open');
+            
+        } else {
+
+            $('#menubutton').removeClass('closed').addClass('open');
+        }
+
+
+
+
+
+
   			// $("#grey").toggleClass('hidden');
   			// $("#bodywrapper").toggleClass('noscroll'); 
 		});		

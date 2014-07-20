@@ -632,7 +632,7 @@ px      68    160    252    */
 
 
 
-/*		Wide Mobile Layout: 480px.
+		Wide Mobile Layout: 480px.
 		Gutters: 24px.
 		Outer margins: 22px.
 		Inherits styles from: Default Layout, Mobile Layout.
@@ -640,59 +640,9 @@ px      68    160    252    */
 cols    1     2      3      4      5
 px      68    160    252    344    436    
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
-
-.wrapper
-	{
-		width:1024px;
-		margin:0 auto;
-		padding:0 10px;
-		box-sizing: border-box;
-	}
-
-	header {
-		height: 70px;
-	}
-
-	nav ul {
-		margin: 0px;
-		padding: 0px;
-		list-style: none;
-		margin-left:-50%;
-	}
-
-	nav ul li {
-		height: 40px;
-		padding: 0;
-		box-sizing:border-box;
-		font-size: 18px;
-		font-weight: 400;
-		float:left;
-		border:none;
-		background: transparent;
-	}
-
-	nav ul li .icon {display: none;}
-	nav ul li span {display: block; float: left; padding:5px;}
-
-
-.home-projects article:nth-child(3n) {display: none;}
-
-article {
-	width:50%;
-	height: 500px;
-}
-
-	#page {
-		width: 436px;
-		margin:12px;
-	}
+@media all and (max-width: 600px) {
 
 
 
-	a:nth-child(odd) .post { margin-left: 92px;}
 	
 }
-
-*/

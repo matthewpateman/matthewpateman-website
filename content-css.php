@@ -114,7 +114,7 @@ header nav a{
 	font-weight: 300;
 }
 
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
 
 	header {
 		height: 69px;
@@ -133,24 +133,59 @@ header nav a{
 }
 
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
 
 	header {
 		height:70px !important;
+		background: green;
 	}
 
 	header #menubutton {
-	display: block;
-	width: 50px;
-	height: 50px;
-	margin-top: 10px;
-	background: URL('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve"><polygon fill="#6D747A" points="24.5,25.5 17,18 32,18 "/></svg>');
-	float: left;
-}
+		position: relative;
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin-top: 15px;
+		float: right;
+	}
 
 	header nav {
-		top:0px;
-		left:-20px;
+    	position: absolute;
+    	top:70px;
+    	text-align: left;
+    	z-index: 600;
+    	width: 100%;
+
+	}
+
+	header nav ul {
+		position: relative;
+		display: block;
+		margin: 0px auto;
+		padding: 0px;
+		list-style: none;
+	}
+
+
+nav ul li {
+	display: block;
+	height: 40px;
+	padding: 0;
+
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 90px;
+
+    cursor: pointer;	
+}
+
+header nav a{
+	text-decoration: none;
+}
+
+
+
+	header nav {
 		width: calc(100% + 40px);
 	}
 
@@ -161,13 +196,138 @@ header nav a{
 
 		nav {position:absolute; top:51px; width: 100%; z-index: 600; left:0px;}
 	nav ul {margin: 0px; padding: 0px; list-style: none;}
-	nav ul li{height: 44px; border-bottom: 1px solid #DCDCDC; box-sizing:border-box; font-size: 14px; background: rgba(255,255,255,0.9); font-weight: 600; width: 100%; padding: 0;}
+	nav ul li{height: 44px; border-bottom: 1px solid #DCDCDC; box-sizing:border-box; font-size: 18px; background: rgba(245,245,245,0.9); font-weight: 600; width: 100%; padding: 0;}
+	nav ul li:first-child{border-top: 1px solid #DCDCDC;}
+	
 	nav ul li a {display:block; width:100%; margin:0 auto; padding:10px 20px; box-sizing:border-box; line-height: 24px;}
 
 	nav ul li span {display: block;}
 
 	.hidden {display:none;}
 
+	.button_line {
+	    width: 34px;
+	    height: 3px;
+	    background: #6D747A;
+	    position: absolute;
+	}
+	#button_top_line {
+	    top: 8px;
+	    left: 3px;
+	}
+	#button_middle_line {
+	    top: 18px;
+	    left: 3px;
+	}
+	#button_bottom_line {
+	    top: 28px;
+	    left: 3px;
+	}
+	#menubutton.open #button_top_line {
+	    -webkit-animation: openFirstLine 0.3s forwards ease;
+	    /* Chrome, Safari, Opera */
+	    animation: openFirstLine 0.5s;
+	}
+	#menubutton.closed #button_top_line {
+	    -webkit-animation: closeFirstLine 0.3s forwards ease;
+	    /* Chrome, Safari, Opera */
+	    animation: closeFirstLine 0.5s;
+	}
+	#menubutton.open #button_middle_line {
+	    -webkit-animation: openMiddleLine 0.3s forwards ease;
+	    /* Chrome, Safari, Opera */
+	    animation: openMiddleLine 0.5s;
+	}
+	#menubutton.closed #button_middle_line {
+	    -webkit-animation: closeMiddleLine 0.3s forwards ease;
+	    /* Chrome, Safari, Opera */
+	    animation: closeLine 0.5s;
+	}
+	#menubutton.open #button_bottom_line {
+	    -webkit-animation: openBottomLine 0.3s forwards ease;
+	    /* Chrome, Safari, Opera */
+	    animation: bottomLine 5s;
+	    \
+	}
+	#menubutton.closed #button_bottom_line {
+	    -webkit-animation: closeBottomLine 0.3s forwards ease;
+	    /* Chrome, Safari, Opera */
+	    animation: closeBottomLine 5s;
+	}
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes openFirstLine {
+	    0% {
+	        top:8px;
+	        left:3px;
+	    }
+	    100% {
+	        top: 18px;
+	        left: 3px;
+	        -webkit-transform: rotate(135deg);
+	    }
+	}
+	@-webkit-keyframes closeFirstLine {
+	    0% {
+	        top:18px;
+	        left:3px;
+	        -webkit-transform: rotate(-45deg);
+	    }
+	    100% {
+	        top: 8px;
+	        left: 3px;
+	        -webkit-transform: rotate(0deg);
+	    }
+	}
+	@-webkit-keyframes openMiddleLine {
+	    0% {
+	        top:18px;
+	        left:3px;
+	        opacity: 1;
+	    }
+	    100% {
+	        top:18px;
+	        left:3px;
+	        opacity: 0;
+	        -webkit-transform: rotate(45deg);
+	    }
+	}
+	@-webkit-keyframes closeMiddleLine {
+	    0% {
+	        top:18px;
+	        left:3px;
+	        opacity: 0;
+	        -webkit-transform: rotate(-45deg);
+	    }
+	    100% {
+	        top:18px;
+	        left:3px;
+	        opacity: 1;
+	        -webkit-transform: rotate(0deg);
+	    }
+	}
+	@-webkit-keyframes openBottomLine {
+	    0% {
+	        top:28px;
+	        left:3px;
+	    }
+	    100% {
+	        left:3px;
+	        top:18px;
+	        -webkit-transform: rotate(45deg);
+	    }
+	}
+	@-webkit-keyframes closeBottomLine {
+	    0% {
+	        left:3px;
+	        top:18px;
+	        -webkit-transform: rotate(-135deg);
+	    }
+	    100% {
+	        -webkit-transform: rotate(0deg);
+	        top:28px;
+	        left:3px;
+	    }
+	}
 	#logo {
 		width: 48px;
 		height: 30px;
