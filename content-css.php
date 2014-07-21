@@ -206,22 +206,22 @@ header nav a{
 	.hidden {display:none;}
 
 	.button_line {
-	    width: 34px;
-	    height: 3px;
+	    width: 28px;
+	    height: 2px;
 	    background: #6D747A;
 	    position: absolute;
 	}
 	#button_top_line {
-	    top: 8px;
-	    left: 3px;
+	    top: 12px;
+	    left: 6px;
 	}
 	#button_middle_line {
-	    top: 18px;
-	    left: 3px;
+	    top: 19px;
+	    left: 6px;
 	}
 	#button_bottom_line {
-	    top: 28px;
-	    left: 3px;
+	    top: 26px;
+	    left: 6px;
 	}
 	#menubutton.open #button_top_line {
 	    -webkit-animation: openFirstLine 0.3s forwards ease;
@@ -257,75 +257,75 @@ header nav a{
 	/* Chrome, Safari, Opera */
 	@-webkit-keyframes openFirstLine {
 	    0% {
-	        top:8px;
-	        left:3px;
+	        top: 12px;
+	        left: 6px;
 	    }
 	    100% {
-	        top: 18px;
-	        left: 3px;
+	        top: 19px;
+	        left: 6px;
 	        -webkit-transform: rotate(135deg);
 	    }
 	}
 	@-webkit-keyframes closeFirstLine {
 	    0% {
-	        top:18px;
-	        left:3px;
+	        top: 19px;
+	        left: 6px;
 	        -webkit-transform: rotate(-45deg);
 	    }
 	    100% {
-	        top: 8px;
-	        left: 3px;
+	        top: 12px;
+	        left: 6px;
 	        -webkit-transform: rotate(0deg);
 	    }
 	}
 	@-webkit-keyframes openMiddleLine {
 	    0% {
-	        top:18px;
-	        left:3px;
+	        top: 19px;
+	        left: 6px;
 	        opacity: 1;
 	    }
 	    100% {
-	        top:18px;
-	        left:3px;
+	        top: 19px;
+	        left: 6px;
 	        opacity: 0;
 	        -webkit-transform: rotate(45deg);
 	    }
 	}
 	@-webkit-keyframes closeMiddleLine {
 	    0% {
-	        top:18px;
-	        left:3px;
+	        top: 19px;
+	        left: 6px;
 	        opacity: 0;
 	        -webkit-transform: rotate(-45deg);
 	    }
 	    100% {
-	        top:18px;
-	        left:3px;
+	        top: 19px;
+	        left: 6px;
 	        opacity: 1;
 	        -webkit-transform: rotate(0deg);
 	    }
 	}
 	@-webkit-keyframes openBottomLine {
 	    0% {
-	        top:28px;
-	        left:3px;
+	        top: 26px;
+	        left: 6px;
 	    }
 	    100% {
-	        left:3px;
-	        top:18px;
+	        left: 6px;
+	        top: 19px;
 	        -webkit-transform: rotate(45deg);
 	    }
 	}
 	@-webkit-keyframes closeBottomLine {
 	    0% {
-	        left:3px;
-	        top:18px;
+	        left: 6px;
+	        top: 19px;
 	        -webkit-transform: rotate(-135deg);
 	    }
 	    100% {
 	        -webkit-transform: rotate(0deg);
-	        top:28px;
-	        left:3px;
+	        top: 26px;
+	        left: 6px;
 	    }
 	}
 	#logo {
